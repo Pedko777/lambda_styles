@@ -1,0 +1,34 @@
+@import 'mixin.scss';
+.imgWrp {
+  display: flex;
+  align-items: center;
+  @include for-tablet {
+    width: 124px;
+    height: 77px;
+  }
+  @include for-desktop {
+    width: 138px;
+    height: 86px;
+  }
+  @include for-desktop-up {
+    width: 138px;
+    height: 86px;
+  }
+}
+
+.img {
+  position: relative;
+  object-fit: contain;
+  @include for-tablet {
+    width: 124px;
+    height: 77px;
+  }
+  @include for-desktop {
+    width: 138px;
+    height: 86px;
+  }
+  @include for-desktop-up {
+    width: 138px;
+    height: 86px;
+  }
+}

@@ -1,0 +1,69 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'mixin.scss';
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  .headerWrp {
+    @include for-phone {
+      padding: 0 24px 0 11px;
+    }
+    @include for-tablet {
+      padding: 0 76px 0 64px;
+    }
+    @include for-desktop {
+      padding: 0 76px 0 64px;
+    }
+  }
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  padding: 18px 0 14px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+
+  @include for-phone {
+    justify-content: space-between;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include for-tablet {
+    width: 100%;
+  }
+  @include for-desktop {
+    width: 100%;
+  }
+  @include for-desktop-up {
+    width: 100%;
+  }
+}
+
+.logoBox {
+  overflow: hidden;
+  width: 120px;
+  // margin-right: 14px;
+  cursor: pointer;
+  .logoLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .logo {
+    margin-left: -12px;
+    width: 120px;
+    height: 48px;
+  }
+}

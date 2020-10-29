@@ -1,0 +1,82 @@
+@import 'mixin.scss';
+.demoSection {
+  // overflow-x: hidden;
+  z-index: 3;
+
+  @include for-phone {
+    position: relative;
+    text-align: center;
+    padding: 0 0 35px;
+  }
+  @include for-tablet {
+    padding: 0 0 58px;
+    display: flex;
+    align-items: center;
+  }
+  @include for-desktop {
+    padding: 0 0 31px;
+    display: flex;
+    align-items: center;
+  }
+  @include for-desktop-up {
+    padding: 0 0 52px;
+    display: flex;
+    align-items: center;
+  }
+}
+.imgWrp {
+  @include for-phone {
+    padding: 0 15px;
+  }
+  @include for-tablet {
+    // padding: 0 24px;
+  }
+}
+
+.img {
+  z-index: 3;
+  position: relative;
+  max-width: 1055px;
+  object-fit: contain;
+  @include for-phone {
+    width: 751px;
+    height: 435px;
+    margin-top: -72px;
+    left: -4px;
+  }
+  @include for-tablet {
+    margin-top: -90px;
+    width: 689px;
+    height: 384px;
+  }
+  @include for-desktop {
+    margin-top: -90px;
+    width: 984px;
+    height: 549px;
+  }
+  @include for-desktop-up {
+    max-width: 1055px;
+    margin-top: -100px;
+  }
+}
+// .img {
+//   z-index: 3;
+//   @include for-phone {
+//     position: relative;
+//     height: 384px;
+//   }
+//   @include for-tablet {
+//     margin-top: -90px;
+//     width: 689px;
+//     height: 384px;
+//   }
+//   @include for-desktop {
+//     margin-top: -90px;
+//     width: 984px;
+//     height: 549px;
+//   }
+//   @include for-desktop-up {
+//     max-width: 1055px;
+//     margin-top: -100px;
+//   }
+// }

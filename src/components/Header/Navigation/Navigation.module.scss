@@ -1,0 +1,62 @@
+@import 'variables.scss';
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 120px);
+  .navigationList {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid rgba(33, 39, 46, 0.2);
+    min-height: 24px;
+    padding-left: 24px;
+
+    .navigationListItem {
+      display: flex;
+      padding-bottom: 5px;
+    }
+  }
+}
+.navLink {
+  border: none;
+  text-decoration: none;
+  color: $primary-text-color;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  transition: 0.4s;
+}
+.navLink:hover,
+.navLink:focus {
+  color: $navigation-btn-active;
+  cursor: pointer;
+}
+.navLinkActive {
+  color: $navigation-btn-active;
+}
+
+.navigationList li:not(:last-of-type) {
+  padding-right: 24px;
+}
+
+.btn {
+  // width: 103px;
+  border: 1px solid rgba(144, 149, 153, 0.35);
+  background-color: hsla(0, 0%, 100%, 0);
+  color: $primary-text-color;
+  transition: 0.4s;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 600;
+  width: 103px;
+  height: 36px;
+  padding: 9px 15.5px 12px 16.5px;
+  letter-spacing: -0.1px;
+}
+.btn:hover {
+  background-image: linear-gradient(104deg, #ff474d, #fa4353);
+  color: #fff;
+}

@@ -1,0 +1,91 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'mixin.scss';
+
+.firstSection {
+  text-align: center;
+  position: relative;
+  height: 700px;
+
+  @include for-phone {
+    height: 1188px;
+    background: url(../../../ui/header/Boxes.png) no-repeat left -184px top 520px/403px,
+      url(../../../ui/header/Fruits.png) no-repeat right -150px top 590px/330px;
+    background-color: $bg-color;
+  }
+  @include for-tablet {
+    background: url(../../../ui/header/Boxes.png) no-repeat left -252px top 124px/403px,
+      url(../../../ui/header/Fruits.png) no-repeat right -164px top 111px/330px;
+    background-color: $bg-color;
+  }
+  @include for-desktop {
+    padding: 0 0 31px;
+    background: url(../../../ui/header/Boxes.png) no-repeat left -220px top 115px/403px,
+      url(../../../ui/header/Fruits.png) no-repeat right -164px top 111px/330px;
+    background-color: $bg-color;
+  }
+  @include for-desktop-up {
+    background: url(../../../ui/header/Boxes.png) no-repeat left -126px top 114px/403px,
+      url(../../../ui/header/Fruits.png) no-repeat right -64px top 99px/330px;
+    background-color: $bg-color;
+  }
+}
+.sectionDscr {
+  position: relative;
+  z-index: 9;
+  padding-top: 196px;
+  @include for-phone {
+    padding-top: 120px;
+  }
+}
+
+.firstTitle {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: $third-text-color;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  padding-bottom: 16px;
+}
+.secondTitle {
+  font-family: 'Manrope', sans-serif;
+  font-size: 40px;
+  line-height: 1.33;
+  font-weight: 700;
+  color: $primary-text-color;
+  letter-spacing: 0.7px;
+  padding-bottom: 39px;
+  @include for-phone {
+    font-size: 27px;
+    letter-spacing: normal;
+    padding-bottom: 42px;
+  }
+}
+
+.sectionBtn {
+  width: 214px;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+  padding-right: 20px;
+  background-image: linear-gradient(104deg, #ff474d, #fa4353);
+  text-align: right;
+  color: $btn-text-color;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.sectionBtn:hover {
+  padding-right: 50px;
+  background-image: linear-gradient(104deg, #ffc547, #faf743);
+}
+
+.sectionBtnDesc {
+  color: #909599;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}

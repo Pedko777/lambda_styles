@@ -1,0 +1,16 @@
+@import 'mixin.scss';
+.imgWrp {
+  @include for-phone {
+    width: 124px;
+    height: 77px;
+  }
+}
+
+.img {
+  position: relative;
+  object-fit: contain;
+  @include for-phone {
+    width: 124px;
+    height: 77px;
+  }
+}

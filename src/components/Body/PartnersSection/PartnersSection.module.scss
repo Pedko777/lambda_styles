@@ -1,0 +1,49 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+.partnersSection {
+  padding: 10px 0 100px;
+  @include for-phone {
+    padding: 10px 0 60px;
+  }
+  .sectionTitle {
+    padding: 0 12px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: $primary-text-color;
+    letter-spacing: 0.5px;
+    margin-bottom: 45px;
+    @include for-tablet {
+      margin-bottom: 64px;
+    }
+    @include for-desktop {
+      margin-bottom: 58px;
+    }
+    @include for-desktop-up {
+      margin-bottom: 80px;
+    }
+  }
+}
+.titleWrapper {
+  margin: 0 auto;
+}
+
+.swiperWrapper {
+  //   max-width: 990px;
+  margin: 0 auto;
+  //   width: 100%;
+  padding: 0;
+
+  @include for-desktop {
+    // padding: 0 20px;
+  }
+  @include for-desktop-up {
+    // padding: 0 124px;
+  }
+}
+
+.swiper {
+  //   display: flex;
+  //   align-items: center;
+}
