@@ -69,6 +69,7 @@
       min-width: 572px;
     }
     .img {
+      transition: 0.4s;
       @include for-phone {
         max-width: 100%;
       }
@@ -170,7 +171,7 @@
       transition: 0.4s;
     }
     button:first-of-type {
-      margin-right: 24px;
+      margin-right: 16px;
     }
   }
   .title::after {
@@ -281,5 +282,12 @@
 }
 
 .animationWrapper {
+  transition: 0.4s;
   width: 100%;
+  @include for-desktop {
+    max-width: 570px;
+  }
+  @include for-desktop-up {
+    max-width: 570px;
+  }
 }

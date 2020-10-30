@@ -1,0 +1,175 @@
+@import 'mixin.scss';
+@import 'variables.scss';
+
+.stepSection {
+  background-color: $bg-color;
+  position: relative;
+  z-index: 2;
+  @include for-phone {
+    padding: 87px 0 101px;
+  }
+  @include for-tablet {
+    padding: 87px 0 101px;
+  }
+  @include for-desktop {
+    padding: 91px 0;
+  }
+  @include for-desktop-up {
+    padding: 91px 0;
+  }
+}
+
+.sectionTop {
+  text-align: center;
+  font-family: 'Manrope Bold';
+  .sectionText {
+    font-size: 13px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #f43939;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+  .sectionTitle {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: $primary-text-color;
+    letter-spacing: 0.5px;
+    @include for-phone {
+      padding: 22px 0 83px;
+    }
+    @include for-tablet {
+      font-size: 32px;
+      padding: 22px 0 83px;
+    }
+    @include for-desktop {
+      font-size: 32px;
+      padding: 22px 0 91px;
+    }
+    @include for-desktop-up {
+      font-size: 32px;
+      padding: 22px 0 91px;
+    }
+  }
+}
+
+.stepList {
+  display: flex;
+  justify-content: space-between;
+  @include for-phone {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include for-tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include for-desktop {
+    align-items: flex-start;
+  }
+  @include for-desktop-up {
+    align-items: flex-start;
+  }
+  .stepListItem {
+    text-align: center;
+    position: relative;
+    @include for-phone {
+      width: 100%;
+    }
+    @include for-tablet {
+      width: 100%;
+    }
+    @include for-desktop {
+      width: 31%;
+    }
+    @include for-desktop-up {
+      width: 31%;
+    }
+    .img {
+      width: 57px;
+      height: 56px;
+    }
+    .stepListItemTitle {
+      font-family: 'Manrope Bold';
+      font-weight: 700;
+      color: #21272e;
+      font-size: 18px;
+      line-height: 1.67;
+      letter-spacing: 0.4px;
+      @include for-phone {
+        padding: 7px 0 8px;
+      }
+      @include for-tablet {
+        padding: 7px 0 8px;
+      }
+      @include for-desktop {
+        padding: 23px 0 8px;
+      }
+      @include for-desktop-up {
+        padding: 23px 0 8px;
+      }
+    }
+    .stepListItemDesc {
+      margin: 0 auto;
+      font-family: 'Manrope Semibold';
+      text-align: center;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 600;
+      color: $secondary-text-color;
+      letter-spacing: 0.2px;
+      @include for-phone {
+        max-width: 80%;
+      }
+      @include for-tablet {
+        max-width: 35%;
+      }
+      @include for-desktop {
+        max-width: 100%;
+      }
+      @include for-desktop-up {
+        max-width: 100%;
+      }
+    }
+  }
+  .stepListItem:not(:last-of-type)::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    right: -44%;
+    width: 270px;
+    height: 2px;
+    opacity: 0.1;
+    background-color: $primary-text-color;
+    @include for-phone {
+      top: auto;
+      bottom: -79px;
+      right: 50%;
+      width: 1px;
+      height: 56px;
+      transform: translateX(-50%);
+    }
+    @include for-tablet {
+      top: auto;
+      bottom: -79px;
+      right: 50%;
+      width: 1px;
+      height: 56px;
+      transform: translateX(-50%);
+    }
+    @include for-desktop {
+      width: 224px;
+      right: -42%;
+    }
+  }
+}
+
+.stepList li:not(:last-of-type) {
+  @include for-phone {
+    margin-bottom: 103px;
+  }
+  @include for-tablet {
+    margin-bottom: 103px;
+  }
+}
