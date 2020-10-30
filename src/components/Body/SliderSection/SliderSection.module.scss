@@ -1,1 +1,216 @@
 @import 'mixin.scss';
+@import 'variables.scss';
+.sliderSection {
+  overflow-x: hidden;
+}
+.contentWrp {
+  @include for-phone {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @include for-tablet {
+    margin-left: 68px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @include for-desktop {
+    margin-left: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+  }
+  @include for-desktop-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+  }
+}
+.paginationBtn {
+  border-radius: 50%;
+  border: 1px;
+  width: 6px;
+  height: 6px;
+  background-color: #d4dae0;
+}
+
+.paginationBtnActive {
+  border-radius: 50%;
+  border: 1px;
+  width: 6px;
+  height: 6px;
+  background-color: black;
+}
+
+.btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: solid 1px #dae1e8;
+  background-color: transparent;
+}
+.btn:disabled {
+  background-color: #f0f1f2;
+}
+
+.imgDisabled {
+  opacity: 0.25;
+}
+.img {
+  opacity: 1;
+}
+
+.imgWrapper {
+  position: relative;
+  border: solid 48px #fcede8;
+  border-radius: 53px;
+  background-color: #fcede8;
+  @include for-phone {
+    border-radius: 53px 0 0 53px;
+    margin-bottom: 40px;
+    max-height: 386px;
+  }
+  @include for-tablet {
+    border-radius: 53px 0 0 53px;
+    max-height: 596px;
+    margin-bottom: 64px;
+  }
+  @include for-desktop {
+    max-height: 596px;
+  }
+  @include for-desktop-up {
+    max-height: 596px;
+  }
+  .contentImg {
+    object-fit: contain;
+
+    @include for-phone {
+      margin-left: 8px;
+      max-height: 296px;
+    }
+    @include for-tablet {
+      max-height: 500px;
+    }
+    @include for-desktop {
+      max-height: 500px;
+    }
+    @include for-desktop-up {
+      max-height: 500px;
+    }
+  }
+}
+
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  min-width: 186px;
+  justify-content: space-around;
+  @include for-phone {
+    margin-bottom: 38px;
+  }
+  @include for-tablet {
+    position: static;
+    align-self: flex-start;
+    margin-right: 35px;
+  }
+  @include for-desktop {
+    align-self: flex-start;
+  }
+  @include for-desktop-up {
+    align-self: flex-start;
+  }
+}
+
+.descriptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include for-tablet {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  @include for-desktop {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-right: 75px;
+  }
+  @include for-desktop-up {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-right: 75px;
+  }
+}
+.descriptionsWrapper {
+  padding: 0 35px;
+  @include for-desktop {
+    padding: 0;
+    align-self: start;
+    margin-bottom: 80px;
+  }
+  @include for-desktop-up {
+    padding: 0;
+    align-self: start;
+    margin-bottom: 80px;
+  }
+}
+.descriprionText {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  color: $secondary-text-color;
+  @include for-tablet {
+    text-align: left;
+    width: 380px;
+    margin-left: -33px;
+  }
+  @include for-desktop {
+    text-align: left;
+    width: 380px;
+  }
+  @include for-desktop-up {
+    text-align: left;
+    width: 380px;
+  }
+}
+.sectionTitle {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: $primary-text-color;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  @include for-tablet {
+    text-align: left;
+    margin-bottom: 24px;
+    font-size: 32px;
+    width: 288px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-stretch: normal;
+    margin-left: -33px;
+  }
+  @include for-desktop {
+    text-align: left;
+    margin-bottom: 24px;
+    font-size: 32px;
+    width: 288px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-stretch: normal;
+  }
+  @include for-desktop-up {
+    text-align: left;
+    margin-bottom: 24px;
+    font-size: 32px;
+    width: 288px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-stretch: normal;
+  }
+}

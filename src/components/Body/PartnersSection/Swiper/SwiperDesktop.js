@@ -21,8 +21,8 @@ const SwiperDesktop = () => {
       }}
       spaceBetween={0}
       slidesPerView={5}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={swiper => console.log(swiper)}
+      // onSlideChange={() => console.log('slide change')}
+      // onSwiper={swiper => console.log(swiper)}
     >
       <SwiperSlide>
         <div className={styles.imgWrp}>

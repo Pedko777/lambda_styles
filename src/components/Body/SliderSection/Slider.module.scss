@@ -1,0 +1,33 @@
+.paginationBtn {
+  border-radius: 50%;
+  border: 1px;
+  width: 6px;
+  height: 6px;
+  background-color: #d4dae0;
+}
+
+.paginationBtnActive {
+  border-radius: 50%;
+  border: 1px;
+  width: 6px;
+  height: 6px;
+  background-color: black;
+}
+
+.btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: solid 1px #dae1e8;
+  background-color: transparent;
+}
+.btn:disabled {
+  background-color: #f0f1f2;
+}
+
+.imgDisabled {
+  opacity: 0.25;
+}
+.img {
+  opacity: 1;
+}

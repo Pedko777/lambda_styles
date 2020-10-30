@@ -17,6 +17,7 @@ const App = () => {
             <FirstSection />
             <DemoSection />
             <PartnersSection />
+            {/* <Slider /> */}
             <SliderSection />
           </main>
         </div>
