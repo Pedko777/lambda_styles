@@ -252,6 +252,7 @@
   }
   .descText {
     color: $secondary-text-color;
+    font-family: 'Manrope Semibold';
     @include for-phone {
       font-size: 18px;
       font-weight: 600;

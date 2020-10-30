@@ -30,20 +30,7 @@
 }
 
 .swiperWrapper {
-  //   max-width: 990px;
   margin: 0 auto;
-  //   width: 100%;
+
   padding: 0;
-
-  @include for-desktop {
-    // padding: 0 20px;
-  }
-  @include for-desktop-up {
-    // padding: 0 124px;
-  }
-}
-
-.swiper {
-  //   display: flex;
-  //   align-items: center;
 }

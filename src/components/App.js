@@ -7,6 +7,7 @@ import PartnersSection from './Body/PartnersSection/PartnersSection';
 import FirstSection from './Body/FirstSection/FirstSection';
 import SliderSection from './Body/SliderSection/SliderSection';
 import ComunicationSection from './Body/ComunicationSection/ComunicationSection';
+import OrderSection from './Body/OrderSection/OrderSection';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <PartnersSection />
         <SliderSection />
         <ComunicationSection />
+        <OrderSection />
       </main>
     </div>
   );
