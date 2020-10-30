@@ -2,6 +2,12 @@
 @import 'variables.scss';
 .sliderSection {
   overflow-x: hidden;
+  @include for-desktop {
+    padding-bottom: 130px;
+  }
+  @include for-desktop-up {
+    padding-bottom: 130px;
+  }
 }
 .contentWrp {
   @include for-phone {
@@ -145,6 +151,12 @@
 }
 .descriptionsWrapper {
   padding: 0 35px;
+  @include for-phone {
+    margin-bottom: 67px;
+  }
+  @include for-tablet {
+    margin-bottom: 67px;
+  }
   @include for-desktop {
     padding: 0;
     align-self: start;
@@ -178,6 +190,7 @@
   }
 }
 .sectionTitle {
+  font-family: 'Manrope Bold';
   text-align: center;
   font-size: 28px;
   font-weight: 700;

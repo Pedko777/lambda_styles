@@ -6,23 +6,21 @@ import DemoSection from './Body/DemoSection/DemoSection';
 import PartnersSection from './Body/PartnersSection/PartnersSection';
 import FirstSection from './Body/FirstSection/FirstSection';
 import SliderSection from './Body/SliderSection/SliderSection';
+import ComunicationSection from './Body/ComunicationSection/ComunicationSection';
+
 const App = () => {
   return (
-    <>
-      <BrowserRouter>
-        <div className={styles.root}>
-          <div className={styles.dotsBg}></div>
-          <Header />
-          <main className={styles.main}>
-            <FirstSection />
-            <DemoSection />
-            <PartnersSection />
-            {/* <Slider /> */}
-            <SliderSection />
-          </main>
-        </div>
-      </BrowserRouter>
-    </>
+    <div className={styles.root}>
+      <div className={styles.dotsBg}></div>
+      <Header />
+      <main className={styles.main}>
+        <FirstSection />
+        <DemoSection />
+        <PartnersSection />
+        <SliderSection />
+        <ComunicationSection />
+      </main>
+    </div>
   );
 };
 

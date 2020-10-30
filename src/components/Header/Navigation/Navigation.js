@@ -6,41 +6,41 @@ const Navigation = () => (
   <div className={styles.navigation}>
     <ul className={styles.navigationList}>
       <li className={styles.navigationListItem}>
-        <NavLink
+        <a
           to="#"
           exact
           className={styles.navLink}
           //   activeClassName={styles.navLinkActive}
         >
           Home
-        </NavLink>
+        </a>
       </li>
       <li className={styles.navigationListItem}>
-        <NavLink
+        <a
           to="#"
           className={styles.navLink}
           //   activeClassName={styles.navLinkActive}
         >
           Supplier
-        </NavLink>
+        </a>
       </li>
       <li className={styles.navigationListItem}>
-        <NavLink
+        <a
           to="#"
           className={styles.navLink}
           //   activeClassName={styles.navLinkActive}
         >
           Aboute
-        </NavLink>
+        </a>
       </li>
       <li className={styles.navigationListItem}>
-        <NavLink
+        <a
           to="#"
           className={styles.navLink}
           //   activeClassName={styles.navLinkActive}
         >
           Contact
-        </NavLink>
+        </a>
       </li>
     </ul>
     <button className={styles.btn}>Get Started</button>
