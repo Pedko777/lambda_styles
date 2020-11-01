@@ -10,6 +10,7 @@ import SliderSection from './Body/SliderSection/SliderSection';
 import ComunicationSection from './Body/ComunicationSection/ComunicationSection';
 import OrderSection from './Body/OrderSection/OrderSection';
 import StepSection from './Body/StepSection/StepSection';
+import FormSection from './Body/FormSection/FormSection';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <ComunicationSection />
         <OrderSection />
         <StepSection />
+        <FormSection />
       </main>
     </div>
   );

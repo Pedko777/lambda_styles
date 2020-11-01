@@ -17,15 +17,7 @@ const Header = () => {
           </div>
 
           <Media queries={{ small: { maxWidth: 767 } }}>
-            {matches =>
-              matches.small ? (
-                <BurgerNavigation />
-              ) : (
-                <>
-                  <Navigation />
-                </>
-              )
-            }
+            {matches => (matches.small ? <BurgerNavigation /> : <Navigation />)}
           </Media>
         </nav>
       </div>
