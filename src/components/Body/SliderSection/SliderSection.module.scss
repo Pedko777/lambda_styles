@@ -40,7 +40,15 @@
   height: 6px;
   background-color: #d4dae0;
 }
-
+.paginationList {
+  display: flex;
+}
+.paginationList li:not(:last-of-type) {
+  margin-right: 12px;
+}
+.paginationList li {
+  margin-bottom: 3px;
+}
 .paginationBtnActive {
   border-radius: 50%;
   border: 1px;
@@ -69,14 +77,16 @@
 
 .imgWrapper {
   position: relative;
-  border: solid 48px #fcede8;
+  border: solid 53px #fcede8;
   border-radius: 53px;
   background-color: #fcede8;
   z-index: 1;
+  margin: 0 auto;
   @include for-phone {
     border-radius: 53px 0 0 53px;
+    height: 412px;
+    width: 100%;
     margin-bottom: 40px;
-    max-height: 386px;
   }
   @include for-tablet {
     border-radius: 53px 0 0 53px;
@@ -89,12 +99,14 @@
   @include for-desktop-up {
     max-height: 596px;
   }
-  .contentImg {
-    object-fit: contain;
 
+  .contentImg {
     @include for-phone {
-      margin-left: 8px;
-      max-height: 296px;
+      position: absolute;
+      left: -35px;
+      top: -10px;
+      height: 330px;
+      object-fit: contain;
     }
     @include for-tablet {
       max-height: 500px;
@@ -111,10 +123,11 @@
 .btnWrapper {
   display: flex;
   align-items: center;
-  min-width: 186px;
-  justify-content: space-around;
+  justify-content: space-between;
   @include for-phone {
-    margin-bottom: 38px;
+    margin-top: -5px;
+    margin-bottom: 40px;
+    min-width: 186px;
   }
   @include for-tablet {
     position: static;
@@ -173,9 +186,13 @@
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  line-height: 1.67;
+  line-height: 1.65;
   letter-spacing: 0.5px;
   color: $secondary-text-color;
+  @include for-phone {
+    line-height: 1.7;
+    letter-spacing: 0.4px;
+  }
   @include for-tablet {
     text-align: left;
     width: 380px;
@@ -195,10 +212,19 @@
   text-align: center;
   font-size: 28px;
   font-weight: 700;
-  line-height: 1.1;
   color: $primary-text-color;
-  letter-spacing: 0.5px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
+  @include for-phone {
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    letter-spacing: -0.4px;
+    text-align: center;
+  }
   @include for-tablet {
     text-align: left;
     margin-bottom: 24px;

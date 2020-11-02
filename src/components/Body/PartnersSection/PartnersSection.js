@@ -13,7 +13,7 @@ const PartnersSection = () => {
           Trusted by 1000+ partners across APAC
         </h3>
       </div>
-      <div className={`container sectionWrapper ${styles.swiper}`}>
+      <div className={` ${styles.swiper}`}>
         <div className={styles.swiperWrapper}>
           <Media queries={{ small: { maxWidth: 767 } }}>
             {matches => (matches.small ? <SwiperPhone /> : <SwiperDesktop />)}

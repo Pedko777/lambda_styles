@@ -34,7 +34,7 @@ const ComunicationSection = () => {
   }, [animationContainer]);
   return (
     <section className={styles.comunicationSection}>
-      <div className={`container sectionWrapper `}>
+      <div className={`container `}>
         <div className={styles.content}>
           <div className={styles.imgWrapper}>
             {before ? (
@@ -98,7 +98,7 @@ const ComunicationSection = () => {
               ) : (
                 <>
                   <div className={styles.title}>
-                    <h3 className={styles.sectionTitle}>Comunication</h3>
+                    <h3 className={styles.sectionTitle}>Communication</h3>
                     <div
                       className={
                         before ? styles.btnWrapper : styles.btnWrapperNew

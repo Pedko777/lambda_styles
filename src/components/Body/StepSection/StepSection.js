@@ -27,7 +27,7 @@ const StepSection = () => {
               Connect to Your Clients
             </h4>
             <p className={styles.stepListItemDesc}>
-              They’ll receive a fully guided tutorial on how to order
+              They’ll receive a fully guided <br /> tutorial on how to order
             </p>
           </li>
           <li className={styles.stepListItem}>

@@ -4,12 +4,12 @@ import styles from './SliderSection.module.scss';
 import { ReactComponent as Left } from '../../../ui/carousel/left.svg';
 import { ReactComponent as Right } from '../../../ui/carousel/right.svg';
 
-import Analytics from '../../../ui/carousel/Analytics.png';
-import OperationalCosts from '../../../ui/carousel/OperationalCosts.png';
 import Orders from '../../../ui/carousel/Orders.png';
+import OperationalCosts from '../../../ui/carousel/OperationalCosts.png';
+import Analytics from '../../../ui/carousel/Analytics.png';
 
 const SliderSection = () => {
-  const [images] = useState([Analytics, OperationalCosts, Orders]);
+  const [images] = useState([Orders, OperationalCosts, Analytics]);
   const [descriptions] = useState([
     {
       title: 'All your orders in one place',
@@ -69,42 +69,45 @@ const SliderSection = () => {
                 </button>
               </li>
               <li>
-                <button
-                  className={
-                    index === 0
-                      ? styles.paginationBtnActive
-                      : styles.paginationBtn
-                  }
-                  onClick={() => {
-                    setIndex(0);
-                  }}
-                ></button>
+                <ul className={styles.paginationList}>
+                  <li>
+                    <button
+                      className={
+                        index === 0
+                          ? styles.paginationBtnActive
+                          : styles.paginationBtn
+                      }
+                      onClick={() => {
+                        setIndex(0);
+                      }}
+                    ></button>
+                  </li>
+                  <li>
+                    <button
+                      className={
+                        index === 1
+                          ? styles.paginationBtnActive
+                          : styles.paginationBtn
+                      }
+                      onClick={() => {
+                        setIndex(1);
+                      }}
+                    ></button>
+                  </li>
+                  <li>
+                    <button
+                      className={
+                        index === 2
+                          ? styles.paginationBtnActive
+                          : styles.paginationBtn
+                      }
+                      onClick={() => {
+                        setIndex(2);
+                      }}
+                    ></button>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <button
-                  className={
-                    index === 1
-                      ? styles.paginationBtnActive
-                      : styles.paginationBtn
-                  }
-                  onClick={() => {
-                    setIndex(1);
-                  }}
-                ></button>
-              </li>
-              <li>
-                <button
-                  className={
-                    index === 2
-                      ? styles.paginationBtnActive
-                      : styles.paginationBtn
-                  }
-                  onClick={() => {
-                    setIndex(2);
-                  }}
-                ></button>
-              </li>
-
               <li>
                 <button
                   className={styles.btn}

@@ -19,10 +19,8 @@ const SwiperPhone = () => {
         delay: 2500,
         disableOnInteraction: false,
       }}
-      spaceBetween={30}
+      spaceBetween={0}
       slidesPerView={2}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={swiper => console.log(swiper)}
     >
       <SwiperSlide>
         <div className={styles.imgWrp}>

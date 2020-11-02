@@ -15,7 +15,7 @@ const Header = () => {
               <Logo className={styles.logo} />
             </a>
           </div>
-          <Media query={{ maxWidth: 599 }}>
+          <Media query={{ maxWidth: 767 }}>
             {matches => (matches ? <BurgerNavigation /> : <Navigation />)}
           </Media>
         </nav>

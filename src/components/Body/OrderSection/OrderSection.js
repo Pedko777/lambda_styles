@@ -33,7 +33,7 @@ const OrderSection = () => {
         </div>
         <ul className={styles.list}>
           <li className={styles.listItem}>
-            <img src={screen1} alt={screen1.name} className={styles.img} />
+            <img src={screen1} alt={screen3.name} className={styles.img} />
             <div className={styles.listItemDescWrp}>
               <p className={styles.listItemDesc}>Select Item</p>
               <Arrow className={styles.listItemDescImg} />
@@ -47,7 +47,7 @@ const OrderSection = () => {
             </div>
           </li>
           <li className={styles.listItem}>
-            <img src={screen3} alt={screen3.name} className={styles.img} />
+            <img src={screen3} alt={screen1.name} className={styles.img} />
             <div className={styles.listItemDescWrp}>
               <p className={styles.listItemDesc}>Select Items</p>
               <Ok />

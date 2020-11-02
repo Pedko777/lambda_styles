@@ -16,7 +16,7 @@ const FormSection = () => {
   return (
     <section className={styles.formSection}>
       <div className={styles.bgOval}></div>
-      <div className={`container sectionWrapper `}>
+      <div className={`container `}>
         <div className={styles.content}>
           <div className={styles.formTop}>
             <p className={styles.sectionText}>let’s do this</p>
@@ -120,7 +120,6 @@ const FormSection = () => {
                 <input
                   name="phone"
                   type="number"
-                  placeholder="Name"
                   className={styles.contactFormInputPhone}
                 />
               </div>

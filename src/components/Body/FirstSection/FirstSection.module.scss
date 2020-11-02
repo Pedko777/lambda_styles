@@ -9,13 +9,13 @@
 
   @include for-phone {
     height: 1188px;
-    background: url(../../../ui/header/Boxes.png) no-repeat left -184px top 520px/403px,
-      url(../../../ui/header/Fruits.png) no-repeat right -150px top 590px/330px;
+    background: url(../../../ui/header/Boxes.png) no-repeat left -178px top 515px/403px,
+      url(../../../ui/header/Fruits.png) no-repeat right -165px top 578px/330px;
     background-color: $bg-color;
   }
   @include for-tablet {
     background: url(../../../ui/header/Boxes.png) no-repeat left -252px top 124px/403px,
-      url(../../../ui/header/Fruits.png) no-repeat right -164px top 111px/330px;
+      url(../../../ui/header/Fruits.png) no-repeat right -150px top 106px/330px;
     background-color: $bg-color;
   }
   @include for-desktop {
@@ -35,47 +35,58 @@
   z-index: 9;
   padding-top: 196px;
   @include for-phone {
-    padding-top: 120px;
+    padding-top: 117px;
   }
 }
 
 .firstTitle {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope Semibold', sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: $third-text-color;
   text-transform: uppercase;
-  letter-spacing: 0.7px;
-  padding-bottom: 16px;
+  @include for-phone {
+    padding-bottom: 15px;
+    margin-left: 24px;
+    line-height: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
 }
 .secondTitle {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope Semibold', sans-serif;
   font-size: 40px;
   line-height: 1.33;
-  font-weight: 700;
+  font-weight: 600;
   color: $primary-text-color;
   letter-spacing: 0.7px;
   padding-bottom: 39px;
   @include for-phone {
-    font-size: 27px;
+    font-size: 28px;
     letter-spacing: normal;
-    padding-bottom: 42px;
+    padding-bottom: 48px;
+    line-height: normal;
+    line-height: 1.38;
   }
 }
 
 .sectionBtn {
+  z-index: 0;
   width: 214px;
   height: 52px;
   border-radius: 8px;
   border: none;
-  padding-right: 20px;
+  padding: 0 0 5px 43px;
   background-image: linear-gradient(104deg, #ff474d, #fa4353);
-  text-align: right;
+  text-align: center;
+  font-weight: normal;
   color: $btn-text-color;
   font-size: 15px;
   transition: 0.4s;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   cursor: pointer;
+  box-shadow: 0 13px 18px -12px rgba(0, 0, 0, 0.5);
 }
 
 .sectionBtn:hover {
@@ -87,5 +98,10 @@
   color: #909599;
   font-family: 'Manrope', sans-serif;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  // letter-spacing: 0.1px;
+  // margin-left: 5px;
 }

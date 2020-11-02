@@ -3,10 +3,12 @@
 
 .stepSection {
   background-color: $bg-color;
+  // background-color: red;
+
   position: relative;
   z-index: 2;
   @include for-phone {
-    padding: 87px 0 101px;
+    padding: 68px 0 101px;
   }
   @include for-tablet {
     padding: 87px 0 101px;
@@ -28,7 +30,7 @@
     font-weight: 700;
     color: #f43939;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
   }
   .sectionTitle {
     font-size: 28px;
@@ -37,7 +39,9 @@
     color: $primary-text-color;
     letter-spacing: 0.5px;
     @include for-phone {
-      padding: 22px 0 83px;
+      padding: 17px 6px 60px;
+      letter-spacing: -0.5px;
+      line-height: 1.4;
     }
     @include for-tablet {
       font-size: 32px;
@@ -91,14 +95,15 @@
       height: 56px;
     }
     .stepListItemTitle {
-      font-family: 'Manrope Bold';
-      font-weight: 700;
-      color: #21272e;
+      font-family: 'Manrope Semibold';
+      font-weight: 600;
+      color: $primary-text-color;
       font-size: 18px;
       line-height: 1.67;
       letter-spacing: 0.4px;
       @include for-phone {
-        padding: 7px 0 8px;
+        padding: 9px 0 8px;
+        letter-spacing: 0;
       }
       @include for-tablet {
         padding: 7px 0 8px;
@@ -115,12 +120,12 @@
       font-family: 'Manrope Semibold';
       text-align: center;
       font-size: 14px;
-      line-height: 17px;
+      line-height: 19px;
       font-weight: 600;
       color: $secondary-text-color;
-      letter-spacing: 0.2px;
+      letter-spacing: -0.2px;
       @include for-phone {
-        max-width: 80%;
+        max-width: 90%;
       }
       @include for-tablet {
         max-width: 35%;
