@@ -72,6 +72,7 @@
   border: solid 48px #fcede8;
   border-radius: 53px;
   background-color: #fcede8;
+  z-index: 1;
   @include for-phone {
     border-radius: 53px 0 0 53px;
     margin-bottom: 40px;

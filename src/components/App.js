@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { BrowserRouter } from 'react-router-dom';
 import styles from './App.module.scss';
 
 import Header from './Header/Header';
@@ -15,21 +15,23 @@ import Footer from './Footer/Footer';
 
 const App = () => {
   return (
-    <div className={styles.root}>
-      <div className={styles.dotsBg}></div>
-      <Header />
-      <main className={styles.main}>
-        <FirstSection />
-        <DemoSection />
-        <PartnersSection />
-        <SliderSection />
-        <ComunicationSection />
-        <OrderSection />
-        <StepSection />
-        <FormSection />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className={styles.root}>
+        <div className={styles.dotsBg}></div>
+        <Header />
+        <main className={styles.main}>
+          <FirstSection />
+          <DemoSection />
+          <PartnersSection />
+          <SliderSection />
+          <ComunicationSection />
+          <OrderSection />
+          <StepSection />
+          <FormSection />
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 };
 

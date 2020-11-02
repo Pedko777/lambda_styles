@@ -16,21 +16,24 @@
   @include for-phone {
     display: none;
   }
-  //   background: url(../ui/rootBg/1.png) no-repeat right 85px top 5px/600px;
-  //   url(../ui/rootBg/2.png) no-repeat right 100px top 802px/961px,
-  //   url(../ui/rootBg/3.png) no-repeat left 319px bottom 998px/710px,
-  //   url(../ui/rootBg/4.png) no-repeat left 323px bottom 151px/370px;
+
   @include for-tablet {
-    background: url(../ui/rootBg/1.png) no-repeat right -420px top 5px/600px;
+    background: url(../ui/rootBg/1.png) no-repeat right -420px top 5px/600px,
+      url(../ui/rootBg/2.png) no-repeat right -409px top 769px/960px,
+      url(../ui/rootBg/3.png) no-repeat left 51px bottom 3848px/695px,
+      url(../ui/rootBg/4.png) no-repeat left 324px bottom 566px/570px;
   }
   @include for-desktop {
-    background: url(../ui/rootBg/1.png) no-repeat right -100px top 5px/600px;
+    background: url(../ui/rootBg/1.png) no-repeat right -163px top/600px,
+      url(../ui/rootBg/2.png) no-repeat right -164px top 1113px/960px,
+      url(../ui/rootBg/3.png) no-repeat left 335px bottom 1002px/695px,
+      url(../ui/rootBg/4.png) no-repeat left 324px bottom 148px/370px;
   }
   @include for-desktop-up {
-    background: url(../ui/rootBg/1.png) no-repeat right 85px top 5px/600px;
-    // url(../ui/rootBg/2.png) no-repeat right 100px top 700px/961px;
-    // url(../ui/rootBg/3.png) no-repeat left 319px bottom 998px/710px,
-    //   url(../ui/rootBg/4.png) no-repeat left 323px bottom 151px/370px;
+    background: url(../ui/rootBg/1.png) no-repeat right 85px top 5px/600px,
+      url(../ui/rootBg/2.png) no-repeat right 95px top 805px/961px,
+      url(../ui/rootBg/3.png) no-repeat left 319px bottom 1050px/710px,
+      url(../ui/rootBg/4.png) no-repeat left 323px bottom 151px/370px;
   }
 }
 

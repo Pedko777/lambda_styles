@@ -83,9 +83,11 @@
         .navList li:not(:last-of-type) {
           margin-right: 24px;
           @include for-phone {
+            margin-right: 0;
             margin-bottom: 28.5px;
           }
         }
+
         .navList {
           display: flex;
           justify-content: space-between;

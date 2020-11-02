@@ -4,7 +4,7 @@
 .formSection {
   position: relative;
   background-image: linear-gradient(#fff, #fafafa);
-
+  //   z-index: ;
   @include for-phone {
     padding: 72px 0 88px;
   }
@@ -16,6 +16,7 @@
   }
   @include for-desktop-up {
     padding: 228px 0 39px;
+    box-shadow: -40px 0 5px 27px hsla(0, 0%, 100%, 0.5);
   }
 }
 
@@ -35,12 +36,12 @@
     content: '';
     display: block;
     height: 100%;
-    width: 35%;
+    width: 20%;
     position: absolute;
     z-index: 2;
     right: 0;
     top: 0;
-    background-color: #fff;
+    background-color: none;
   }
 }
 
@@ -50,7 +51,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 0;
   @include for-phone {
     display: none;
   }
@@ -271,6 +272,12 @@
       background: url(../../../ui/form/bgCountry.png) no-repeat 100% 0/111px
         181px;
       transform: rotate(90deg) scaleY(-1);
+      @include for-desktop {
+        display: none;
+      }
+      @include for-desktop-up {
+        display: none;
+      }
     }
   }
 
@@ -336,8 +343,8 @@
       @include for-desktop-up {
         width: 105%;
         height: 100%;
-        background: url(../../../ui/form/bgForm1.png) no-repeat right 1px top
-            40px/98px 182px,
+        background: url(../../../ui/form/bgForm1.png) no-repeat right -10px top 40px/98px
+            182px,
           url(../../../ui/form/bgForm2.png) no-repeat left 57% bottom/98px 182px;
       }
     }

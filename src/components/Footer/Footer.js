@@ -20,32 +20,32 @@ const Footer = () => {
           <nav className={styles.footerNav}>
             <ul className={styles.navList}>
               <li className={styles.navListItem}>
-                <a href="/" className={styles.link}>
+                <a href="#" className={styles.link}>
                   Home
                 </a>
               </li>
               <li className={styles.navListItem}>
-                <a href="/about" className={styles.link}>
+                <a href="#" className={styles.link}>
                   About
                 </a>
               </li>
               <li className={styles.navListItem}>
-                <a href="/contact" className={styles.link}>
+                <a href="#" className={styles.link}>
                   Contact
                 </a>
               </li>
               <li className={styles.navListItem}>
-                <a href="/faq" className={styles.link}>
+                <a href="#" className={styles.link}>
                   FAQ
                 </a>
               </li>
               <li className={styles.navListItem}>
-                <a href="/bloq" className={styles.link}>
+                <a href="#" className={styles.link}>
                   Blog
                 </a>
               </li>
               <li className={styles.navListItem}>
-                <a href="/legal" className={styles.link}>
+                <a href="#" className={styles.link}>
                   Legal
                 </a>
               </li>
@@ -53,24 +53,24 @@ const Footer = () => {
           </nav>
           <ul className={styles.socialsList}>
             <li>
-              <a href="/instagram">
+              <a href="#">
                 <img src={instagram} alt="instagram icon" />
               </a>
             </li>
             <li>
-              <a href="/linkedin">
+              <a href="#">
                 <img src={linkedin} alt="linkedin icon" />
               </a>
             </li>
           </ul>
           <ul className={styles.storeList}>
             <li className={styles.storeListItem}>
-              <a href="/appleStore">
+              <a href="#">
                 <img src={appleStore} alt="appleStore icon" />
               </a>
             </li>
             <li>
-              <a href="/googleStore">
+              <a href="#">
                 <img src={googleStore} alt="googleStore icon" />
               </a>
             </li>
