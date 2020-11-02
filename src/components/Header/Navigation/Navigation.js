@@ -5,22 +5,22 @@ const Navigation = () => (
   <div className={styles.navigation}>
     <ul className={styles.navigationList}>
       <li className={styles.navigationListItem}>
-        <a to="#" exact className={styles.navLink}>
+        <a to="/" exact className={styles.navLink}>
           Home
         </a>
       </li>
       <li className={styles.navigationListItem}>
-        <a to="#" className={styles.navLink}>
+        <a to="/supplier" className={styles.navLink}>
           Supplier
         </a>
       </li>
       <li className={styles.navigationListItem}>
-        <a to="#" className={styles.navLink}>
+        <a to="/about" className={styles.navLink}>
           Aboute
         </a>
       </li>
       <li className={styles.navigationListItem}>
-        <a to="#" className={styles.navLink}>
+        <a to="/contact" className={styles.navLink}>
           Contact
         </a>
       </li>

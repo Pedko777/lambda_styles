@@ -10,14 +10,13 @@ const Header = () => {
     <div className={styles.header}>
       <div className={`container ${styles.headerWrp}`}>
         <nav className={styles.navBar}>
-          <div className={styles.logoBox}>
-            <a className={styles.logoLink}>
+          <div className={styles.logoBox} href="#">
+            <a className={styles.logoLink} href="#">
               <Logo className={styles.logo} />
             </a>
           </div>
-
-          <Media queries={{ small: { maxWidth: 767 } }}>
-            {matches => (matches.small ? <BurgerNavigation /> : <Navigation />)}
+          <Media query={{ maxWidth: 599 }}>
+            {matches => (matches ? <BurgerNavigation /> : <Navigation />)}
           </Media>
         </nav>
       </div>

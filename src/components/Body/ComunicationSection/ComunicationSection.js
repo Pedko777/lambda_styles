@@ -31,7 +31,7 @@ const ComunicationSection = () => {
       animationData: animation,
     });
     anim.setSpeed(1);
-  }, [animationContainer, animation, lottie]);
+  }, [animationContainer]);
   return (
     <section className={styles.comunicationSection}>
       <div className={`container sectionWrapper `}>

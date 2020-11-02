@@ -11,6 +11,7 @@ import ComunicationSection from './Body/ComunicationSection/ComunicationSection'
 import OrderSection from './Body/OrderSection/OrderSection';
 import StepSection from './Body/StepSection/StepSection';
 import FormSection from './Body/FormSection/FormSection';
+import Footer from './Footer/Footer';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <StepSection />
         <FormSection />
       </main>
+      <Footer />
     </div>
   );
 };

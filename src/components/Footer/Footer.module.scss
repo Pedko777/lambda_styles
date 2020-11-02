@@ -1,0 +1,197 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.footer {
+  background-color: $primary-text-color;
+  position: relative;
+  z-index: 5;
+  padding: 38px 0 41px;
+  @include for-phone {
+    padding: 48px 0 22px;
+  }
+  @include for-tablet {
+    padding: 30px 0 19px;
+  }
+  .footerWrp {
+    @include for-phone {
+      padding: 0 10px;
+    }
+    @include for-tablet {
+      padding: 0 10px;
+    }
+    @include for-desktop {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    @include for-desktop-up {
+      max-width: 1156px;
+      margin: 0 auto;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+      @include for-phone {
+        flex-direction: column;
+        height: auto;
+      }
+      @include for-tablet {
+        height: 140px;
+        padding-left: 40px;
+      }
+      @include for-desktop {
+        justify-content: start;
+      }
+      @include for-desktop-up {
+        justify-content: start;
+      }
+      .logo {
+        cursor: pointer;
+        width: 120px;
+        height: 48px;
+        @include for-phone {
+          margin-bottom: 36px;
+        }
+        @include for-tablet {
+          margin-left: -12px;
+          margin-top: 5px;
+        }
+        @include for-desktop {
+          margin-left: -12px;
+          margin-top: 5px;
+          margin-right: 10px;
+        }
+        @include for-desktop-up {
+        }
+      }
+      .footerNav {
+        @include for-phone {
+          margin-right: 0;
+          width: 100%;
+        }
+        @include for-tablet {
+          width: calc(100% - 120px);
+        }
+        @include for-desktop {
+          margin-right: 26px;
+        }
+        @include for-desktop-up {
+          margin-right: 26px;
+        }
+        .navList li:not(:last-of-type) {
+          margin-right: 24px;
+          @include for-phone {
+            margin-bottom: 28.5px;
+          }
+        }
+        .navList {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 24px;
+          list-style: none;
+          height: 24px;
+          border-left: 1px solid hsla(0, 0%, 100%, 0.2);
+          @include for-phone {
+            flex-direction: column;
+            border-left: none;
+            height: auto;
+            padding-left: 0;
+            margin-left: -16px;
+            padding-left: 20px;
+          }
+          @include for-tablet {
+            justify-content: flex-start;
+          }
+          .navListItem {
+            line-height: 8px;
+            cursor: pointer;
+            @include for-desktop {
+              padding-bottom: 5px;
+            }
+          }
+        }
+      }
+      .socialsList li:not(:last-of-type) {
+        margin-right: 25px;
+      }
+      .socialsList {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid hsla(0, 0%, 100%, 0.2);
+        height: 24px;
+        padding-left: 26px;
+        @include for-phone {
+          border-left: none;
+          height: auto;
+          margin: 40px auto;
+          padding-left: 0;
+        }
+        @include for-tablet {
+          order: 3;
+          margin-left: 23px;
+        }
+      }
+      .storeList li:not(:last-of-type) {
+        margin-right: 18px;
+      }
+      .storeList {
+        margin: 0 auto;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include for-phone {
+          justify-content: center;
+          margin-bottom: 16px;
+        }
+        @include for-tablet {
+          order: 4;
+          margin-left: auto;
+          justify-content: end;
+          margin-right: 15px;
+        }
+        @include for-desktop {
+          position: absolute;
+          right: 0;
+        }
+        @include for-desktop-up {
+          position: absolute;
+          right: 0;
+        }
+      }
+      .footerLinkWrapper {
+        display: flex;
+        @include for-phone {
+          justify-content: center;
+        }
+        @include for-desktop {
+          position: absolute;
+          bottom: -28px;
+          left: 17px;
+        }
+        @include for-desktop-up {
+          position: absolute;
+          bottom: -28px;
+          left: 17px;
+        }
+        .footerLink {
+          font-weight: 11px;
+          color: rgba(255, 255, 255, 0.25);
+        }
+      }
+    }
+  }
+}
+.link {
+  color: #fff;
+  font-family: 'Manrope Semibold';
+  font-size: 12px;
+}
+.link:hover {
+  color: $third-text-color;
+}
