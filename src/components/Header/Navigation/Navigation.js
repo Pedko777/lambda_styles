@@ -7,7 +7,7 @@ const Navigation = () => {
       <ul className={styles.navigationList}>
         <li className={styles.navigationListItem}>
           <NavLink
-            to="#"
+            to="/"
             exact
             className={styles.navLink}
             activeClassName={styles.active}
@@ -16,17 +16,29 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li className={styles.navigationListItem}>
-          <NavLink to="#" className={styles.navLink}>
+          <NavLink
+            to="/supplier"
+            className={styles.navLink}
+            activeClassName={styles.active}
+          >
             Supplier
           </NavLink>
         </li>
         <li className={styles.navigationListItem}>
-          <NavLink to="#" className={styles.navLink}>
+          <NavLink
+            to="/aboute"
+            className={styles.navLink}
+            activeClassName={styles.active}
+          >
             Aboute
           </NavLink>
         </li>
         <li className={styles.navigationListItem}>
-          <NavLink to="#" className={styles.navLink}>
+          <NavLink
+            to="/contact"
+            className={styles.navLink}
+            activeClassName={styles.active}
+          >
             Contact
           </NavLink>
         </li>
