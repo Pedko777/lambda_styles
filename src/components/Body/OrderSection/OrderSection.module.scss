@@ -73,8 +73,8 @@
       margin-bottom: 24px;
       font-size: 32px;
       line-height: 44px;
-      letter-spacing: 0.8px;
-      margin-bottom: 25px;
+      letter-spacing: -0.5px;
+      margin-bottom: 23px;
     }
     @include for-desktop {
       text-align: left;
@@ -94,8 +94,7 @@
     font-size: 18px;
     font-weight: 600;
     text-align: center;
-    line-height: 1.67;
-    letter-spacing: 0.5px;
+  
     color: $secondary-text-color;
     @include for-phone {
       font-size: 18px;
@@ -109,8 +108,10 @@
     }
     @include for-tablet {
       margin: 0 auto;
-      width: 380px;
-      width: 72%;
+      line-height: 1.67;
+      letter-spacing: -0.2px;
+      width: 62%;
+      margin-bottom: 1px;
     }
     @include for-desktop {
       text-align: left;
@@ -126,7 +127,12 @@
     }
   }
 }
-
+.list li:nth-of-type(2) {
+  margin-left: 5px;
+}
+.list li:nth-of-type(3) {
+  margin-left: 1px;
+}
 .list {
   z-index: 1;
   display: flex;
@@ -153,6 +159,7 @@
   }
   .listItem {
     background-color: #e1eff0;
+    // background-color: #146469;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -174,7 +181,7 @@
       border-radius: 67.6px;
       margin-bottom: 96px;
       left: 5px;
-      padding-bottom: 11px;
+      padding-bottom: 14px;
     }
     @include for-desktop {
       width: 265px;
@@ -240,15 +247,15 @@
         opacity: 0.4;
         font-family: 'Manrope Semibold';
         font-weight: normal;
-
-        letter-spacing: 0.3px;
         @include for-phone {
+          letter-spacing: 0.3px;
           font-size: 14px;
           line-height: 16px;
         }
         @include for-tablet {
-          font-size: 18.2px;
-          line-height: 2.14;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: -0.1px;
         }
         @include for-desktop-up {
           font-size: 14px;

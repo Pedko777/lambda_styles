@@ -15,9 +15,14 @@
     }
     @include for-tablet {
       padding: 0 76px 0 64px;
+      height: 80px;
     }
     @include for-desktop {
       padding: 0 76px 0 64px;
+      height: 80px;
+    }
+    @include for-desktop-up {
+
     }
   }
 }
@@ -53,8 +58,16 @@
 .logoBox {
   overflow: hidden;
   width: 120px;
-
   cursor: pointer;
+  @include for-tablet {
+    margin-right: 14px;
+  }
+  @include for-desktop {
+    margin-right: 12px;
+  }
+  @include for-desktop-up {
+    margin-right: 12px;
+  }
   .logoLink {
     display: flex;
     justify-content: space-between;
@@ -62,8 +75,10 @@
     width: 100%;
   }
   .logo {
-    margin-left: -13px;
     width: 120px;
     height: 48px;
+    @include for-phone {
+      margin-left: -13px;
+    }
   }
 }

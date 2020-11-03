@@ -55,7 +55,7 @@ const ComunicationSection = () => {
               matches.large ? (
                 <div className={styles.desktopWrapp}>
                   <div className={styles.title}>
-                    <h3 className={styles.sectionTitle}>Comunication</h3>
+                    <h3 className={styles.sectionTitle}>Communication</h3>
                     <div
                       className={
                         before ? styles.btnWrapper : styles.btnWrapperNew

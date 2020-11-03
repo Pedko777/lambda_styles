@@ -5,8 +5,8 @@ import 'swiper/swiper.scss';
 
 import styles from './SwiperPhone.module.scss';
 
-import { ReactComponent as Bens } from '../../../../ui/partners/Bens.svg';
 import { ReactComponent as Jolliebean } from '../../../../ui/partners/Jolliebean.svg';
+import { ReactComponent as Bens } from '../../../../ui/partners/Bens.svg';
 import goCheken from '../../../../ui/partners/GoCheken.png';
 import Italian from '../../../../ui/partners/Italian.png';
 import SimplyWrapps from '../../../../ui/partners/SimplyWrapps.png';
@@ -22,33 +22,30 @@ const SwiperPhone = () => {
       spaceBetween={0}
       slidesPerView={2}
     >
-      <SwiperSlide>
-        <div className={styles.imgWrp}>
-          <img src={goCheken} alt={goCheken.alt} className={styles.img} />
+  <SwiperSlide>
+        <div className={styles.imgWrpCheken}>
+          <img src={goCheken} alt={goCheken.alt} className={styles.imgCheken}/>
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className={styles.imgWrp}>
-          <Bens className={styles.img} />
+        <div className={styles.imgWrpJolliebean}>
+          <Jolliebean className={styles.imgJoollibean}/>
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className={styles.imgWrp}>
-          <Jolliebean className={styles.img} />
+        <div className={styles.imgWrpBens}>
+          <Bens  className={styles.bensImg}/>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div className={styles.imgWrpSimply}>
+          <img src={SimplyWrapps} alt={SimplyWrapps.alt} className={styles.simplyImg} />
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className={styles.imgWrp}>
-          <img
-            src={SimplyWrapps}
-            alt={SimplyWrapps.alt}
-            className={styles.img}
-          />
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.imgWrp}>
-          <img src={Italian} alt={Italian.alt} className={styles.img} />{' '}
+        <div className={styles.imgWrpItalian}>
+          <img src={Italian} alt={Italian.alt} className={styles.imgItalian} />
         </div>
       </SwiperSlide>
     </Swiper>

@@ -1,16 +1,80 @@
 @import 'mixin.scss';
-.imgWrp {
+.imgWrpItalian {
+  display: flex;
+  align-items: center;
+
   @include for-phone {
-    width: 124px;
+    width: 94px;
+    height: 70px;
+  }
+}
+.imgWrpCheken {
+  @include for-phone {
+    margin: -7px 0 0 20px;
+    width: 104px;
     height: 77px;
   }
 }
-
-.img {
+.imgWrpSimply {
+  @include for-phone {
+    margin: -19px 0 0 0;
+    width: 104px;
+    height: 70px;
+  }
+}
+.imgWrpJolliebean {
+  @include for-phone {
+    margin: 14px 0 0 13px;
+    width: 94px;
+    height: 70px;
+  }
+}
+.imgWrpBens {
+  @include for-phone {
+    margin: -2px 0 0 20px;
+    width: 104px;
+    height: 70px;
+  }
+ 
+}
+.imgWrpSimply {
   position: relative;
   object-fit: contain;
   @include for-phone {
-    width: 124px;
+    margin: -18px 0 0 5px;
+    width: 134px;
     height: 77px;
+  }
+}
+.imgItalian {
+  position: relative;
+  object-fit: contain;
+  @include for-phone {
+    margin: -8px 0 0 5px;
+    width: 114px;
+    height: 77px;
+  }
+}
+.bensImg {
+  @include for-phone {
+    height: 65px;
+  }
+}
+
+.simplyImg {
+  @include for-phone {
+    height: 113px;
+  }
+}
+
+.imgCheken{
+  @include for-phone {
+    height: 87px;
+  }
+}
+.imgJoollibean{
+  @include for-phone {
+    height: 43px;
+    width: 105px;
   }
 }

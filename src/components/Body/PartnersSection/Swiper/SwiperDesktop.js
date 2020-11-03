@@ -19,38 +19,33 @@ const SwiperDesktop = () => {
         delay: 2500,
         disableOnInteraction: false,
       }}
-      spaceBetween={0}
+      spaceBetween={20}
       slidesPerView={5}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={swiper => console.log(swiper)}
     >
       <SwiperSlide>
-        <div className={styles.imgWrp}>
-          <img src={goCheken} alt={goCheken.alt} className={styles.img} />
+        <div className={styles.imgWrpCheken}>
+          <img src={goCheken} alt={goCheken.alt} className={styles.imgCheken}/>
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className={styles.imgWrp}>
-          <Bens className={styles.img} />
+        <div className={styles.imgWrpJolliebean}>
+          <Jolliebean className={styles.imgJoollibean}/>
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className={styles.imgWrp}>
-          <Jolliebean className={styles.img} />
+        <div className={styles.imgWrpBens}>
+          <Bens  className={styles.bensImg}/>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div className={styles.imgWrpSimply}>
+          <img src={SimplyWrapps} alt={SimplyWrapps.alt} className={styles.simplyImg} />
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className={styles.imgWrp}>
-          <img
-            src={SimplyWrapps}
-            alt={SimplyWrapps.alt}
-            className={styles.img}
-          />
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.imgWrp}>
-          <img src={Italian} alt={Italian.alt} className={styles.img} />{' '}
+        <div className={styles.imgWrpItalian}>
+          <img src={Italian} alt={Italian.alt} className={styles.imgItalian} />
         </div>
       </SwiperSlide>
     </Swiper>

@@ -6,7 +6,6 @@
   text-align: center;
   position: relative;
   height: 700px;
-
   @include for-phone {
     height: 1188px;
     background: url(../../../ui/header/Boxes.png) no-repeat left -178px top 515px/403px,
@@ -14,28 +13,37 @@
     background-color: $bg-color;
   }
   @include for-tablet {
-    background: url(../../../ui/header/Boxes.png) no-repeat left -252px top 124px/403px,
-      url(../../../ui/header/Fruits.png) no-repeat right -150px top 106px/330px;
+    background: url(../../../ui/header/Boxes.png) no-repeat left -255px top 124px/403px,
+      url(../../../ui/header/Fruits.png) no-repeat right -167px top 109px/330px;
     background-color: $bg-color;
   }
   @include for-desktop {
     padding: 0 0 31px;
-    background: url(../../../ui/header/Boxes.png) no-repeat left -220px top 115px/403px,
-      url(../../../ui/header/Fruits.png) no-repeat right -164px top 111px/330px;
+    background: url(../../../ui/header/Boxes.png) no-repeat left -222px top 122px/403px,
+      url(../../../ui/header/Fruits.png) no-repeat right -151px top 109px/330px;
     background-color: $bg-color;
   }
   @include for-desktop-up {
-    background: url(../../../ui/header/Boxes.png) no-repeat left -126px top 114px/403px,
-      url(../../../ui/header/Fruits.png) no-repeat right -64px top 99px/330px;
-    background-color: $bg-color;
+    background: url(../../../ui/header/Boxes.png) no-repeat left -222px top 122px/403px,
+    url(../../../ui/header/Fruits.png) no-repeat right -151px top 109px/330px;
+  background-color: $bg-color;
   }
 }
 .sectionDscr {
   position: relative;
   z-index: 9;
-  padding-top: 196px;
+
   @include for-phone {
     padding-top: 117px;
+  }
+  @include for-tablet {
+    padding-top: 194px;
+  }
+  @include for-desktop{
+    padding-top: 195px;
+  }
+  @include for-desktop-up {
+    padding-top: 195px;
   }
 }
 
@@ -45,29 +53,69 @@
   font-weight: 700;
   color: $third-text-color;
   text-transform: uppercase;
+  line-height: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1px;
   @include for-phone {
     padding-bottom: 15px;
     margin-left: 24px;
-    line-height: normal;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: 1px;
+  }
+  @include for-tablet {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  @include for-desktop {
+    margin: -2px 0 10px -5px;
+    text-align: center;
+
+  }
+  @include for-desktop-up {
+    margin: -2px 0 10px -5px;
+    text-align: center;
   }
 }
 .secondTitle {
   font-family: 'Manrope Semibold', sans-serif;
   font-size: 40px;
   line-height: 1.33;
-  font-weight: 600;
+  font-weight: bold;
+  line-height: normal;
   color: $primary-text-color;
-  letter-spacing: 0.7px;
-  padding-bottom: 39px;
+  letter-spacing: normal;
   @include for-phone {
+    letter-spacing: 0.7px;
     font-size: 28px;
+    font-weight: 600;
     letter-spacing: normal;
     padding-bottom: 48px;
-    line-height: normal;
     line-height: 1.38;
+  }
+  @include for-tablet {
+    font-size: 40px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 108px;
+  }
+  @include for-desktop{
+    font-size: 40px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 44px;
+  }
+  @include for-desktop-up {
+    padding-bottom: 108px;
+    font-size: 40px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 44px;
   }
 }
 
@@ -102,6 +150,5 @@
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  // letter-spacing: 0.1px;
-  // margin-left: 5px;
+  letter-spacing: 0.1px;
 }

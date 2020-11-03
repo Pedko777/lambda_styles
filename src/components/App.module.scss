@@ -24,7 +24,7 @@
       url(../ui/rootBg/4.png) no-repeat left 324px bottom 566px/570px;
   }
   @include for-desktop {
-    background: url(../ui/rootBg/1.png) no-repeat right -163px top/600px,
+    background: url(../ui/rootBg/1.png) no-repeat right -162px top 5px/600px,
       url(../ui/rootBg/2.png) no-repeat right -164px top 1113px/960px,
       url(../ui/rootBg/3.png) no-repeat left 335px bottom 1002px/695px,
       url(../ui/rootBg/4.png) no-repeat left 324px bottom 148px/370px;

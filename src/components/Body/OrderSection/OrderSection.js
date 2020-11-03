@@ -12,7 +12,7 @@ const OrderSection = () => {
     <section className={styles.orderSection}>
       <div className={`container sectionWrapper`}>
         <div className={styles.orderHead}>
-          <Media queries={{ small: { maxWidth: 767 } }}>
+          <Media queries={{ small: { maxWidth: 1023 } }}>
             {matches =>
               matches.small ? (
                 <h3 className={styles.sectionTitle}>
@@ -35,7 +35,7 @@ const OrderSection = () => {
           <li className={styles.listItem}>
             <img src={screen1} alt={screen3.name} className={styles.img} />
             <div className={styles.listItemDescWrp}>
-              <p className={styles.listItemDesc}>Select Item</p>
+              <p className={styles.listItemDesc}>Select Items</p>
               <Arrow className={styles.listItemDescImg} />
             </div>
           </li>
@@ -49,7 +49,7 @@ const OrderSection = () => {
           <li className={styles.listItem}>
             <img src={screen3} alt={screen1.name} className={styles.img} />
             <div className={styles.listItemDescWrp}>
-              <p className={styles.listItemDesc}>Select Items</p>
+              <p className={styles.listItemDesc}>Send Order</p>
               <Ok />
             </div>
           </li>

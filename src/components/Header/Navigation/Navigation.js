@@ -30,7 +30,7 @@ const Navigation = () => {
             className={styles.navLink}
             activeClassName={styles.active}
           >
-            Aboute
+            About
           </NavLink>
         </li>
         <li className={styles.navigationListItem}>

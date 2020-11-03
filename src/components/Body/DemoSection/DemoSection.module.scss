@@ -27,9 +27,6 @@
   @include for-phone {
     padding: 0 15px;
   }
-  @include for-tablet {
-    // padding: 0 24px;
-  }
 }
 
 .img {
@@ -44,17 +41,22 @@
     left: -14px;
   }
   @include for-tablet {
-    margin-top: -90px;
-    width: 689px;
-    height: 384px;
+    width: 750px;
+    height: 434px;
+    object-fit: contain;
+    left: -13px;
+    margin-top: -99px;
   }
   @include for-desktop {
-    margin-top: -90px;
-    width: 984px;
-    height: 549px;
+    width: 1069px;
+    height: 659px;
+    left: -40px;
+    margin-top: -121px;
   }
   @include for-desktop-up {
+    z-index: 2;
+    margin-top: -102px;
+    height: 100%;
     max-width: 1055px;
-    margin-top: -100px;
   }
 }

@@ -9,7 +9,7 @@
     padding: 58px 11px 61px;
   }
   @include for-tablet {
-    padding: 64px 0 61px;
+    padding: 59px 0 72px;
   }
   @include for-desktop {
     padding: 64px 0 61px;
@@ -43,6 +43,7 @@
   flex-wrap: wrap;
   @include for-tablet {
     align-items: center;
+    justify-content: center;
   }
   @include for-desktop {
     flex-direction: row;
@@ -56,14 +57,19 @@
     min-width: 1035px;
   }
   .imgWrapper {
-    margin: 0 auto;
+  
     @include for-phone {
+      align-self: center;
       order: 1;
       margin-bottom: 46px;
     }
     @include for-tablet {
-      min-width: 572px;
+      align-self: center;
+      width: 469px;
+      margin-right: 34px;
+      top: 26px;
       order: 1;
+      margin-bottom: 64px
     }
     @include for-desktop {
       min-width: 572px;
@@ -128,9 +134,12 @@
         margin-bottom: 39px;
       }
       @include for-tablet {
-        margin-bottom: 46px;
+        margin-bottom: 39px;
+        
       }
       @include for-desktop {
+        font-family: 'Manrope Bold';
+      line-height: 1.5;
         margin-bottom: 40px;
         text-align: left;
       }
@@ -145,7 +154,13 @@
         margin-bottom: 68px;
       }
       @include for-tablet {
-        margin-bottom: 64px;
+        margin-bottom: 89px;
+      }
+      @include for-desktop {
+
+      }
+      @include for-desktop-up {
+
       }
     }
     .btnWrapperNew {
@@ -159,7 +174,7 @@
       width: 128px;
       height: 48px;
       font-size: 13px;
-      letter-spacing: 0.7px;
+      letter-spacing: 0.8px;
       font-weight: 600;
       outline: none;
       color: #787c80;
@@ -252,13 +267,14 @@
       margin-bottom: 10px;
     }
     @include for-tablet {
+      font-family: 'Manrope Semibold';
       font-size: 18px;
-      font-weight: bold;
-      line-height: 1.67;
+      font-weight: 600;
+      line-height: 1.7;
       font-stretch: normal;
       font-style: normal;
-      letter-spacing: normal;
       text-align: center;
+      margin-bottom: 8px;
     }
     @include for-desktop {
       text-align: left;
@@ -271,7 +287,7 @@
   }
   .descText {
     color: $secondary-text-color;
-    font-family: 'Manrope Semibold';
+    font-family: 'Manrope Regular';
     @include for-phone {
       font-size: 18px;
       font-weight: 600;
@@ -282,12 +298,13 @@
       text-align: center;
     }
     @include for-tablet {
+      font-family: 'Manrope Regular';
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 500;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.67;
-      letter-spacing: normal;
+      letter-spacing: 0.1px;
       text-align: center;
     }
     @include for-desktop {

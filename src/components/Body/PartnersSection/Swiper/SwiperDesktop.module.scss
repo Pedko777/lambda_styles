@@ -1,10 +1,11 @@
 @import 'mixin.scss';
-.imgWrp {
+.imgWrpItalian {
   display: flex;
   align-items: center;
+
   @include for-tablet {
-    width: 124px;
-    height: 77px;
+    width: 94px;
+    height: 70px;
   }
   @include for-desktop {
     width: 138px;
@@ -15,20 +16,160 @@
     height: 86px;
   }
 }
-
-.img {
-  position: relative;
-  object-fit: contain;
+.imgWrpCheken {
   @include for-tablet {
-    width: 124px;
+    margin: -7px 0 0 20px;
+    width: 104px;
     height: 77px;
   }
   @include for-desktop {
+    margin: -5px 0 0 43px;
     width: 138px;
     height: 86px;
   }
   @include for-desktop-up {
+    margin: -5px 0 0 43px;
     width: 138px;
     height: 86px;
+  }
+}
+.imgWrpSimply {
+  @include for-tablet {
+    margin: -19px 0 0 0;
+    width: 104px;
+    height: 70px;
+  }
+  @include for-desktop {
+    margin: -19px 0 0 0;
+    width: 104px;
+    height: 70px;
+  }
+  @include for-desktop-up {
+    margin: -19px 0 0 0;
+    width: 104px;
+    height: 70px;
+  }
+}
+.imgWrpJolliebean {
+  @include for-tablet {
+    margin: 14px 0 0 13px;
+    width: 94px;
+    height: 70px;
+  }
+  @include for-desktop {
+    margin: -1px 0 0 33px;
+    width: 138px;
+    height: 86px;
+  }
+  @include for-desktop-up {
+    margin: -1px 0 0 33px;
+    width: 138px;
+    height: 86px;
+  }
+}
+.imgWrpBens {
+  @include for-phone {
+    width: 104px;
+    height: 70px;
+  }
+  @include for-tablet {
+    margin: -2px 0 0 20px;
+    width: 104px;
+    height: 70px;
+  }
+  @include for-desktop {
+    margin: 5px 0 0 45px;
+    width: 138px;
+    height: 86px;
+  }
+  @include for-desktop-up {
+    margin: -2px 0 0 20px;
+    width: 138px;
+    height: 86px;
+  }
+}
+.imgWrpSimply {
+  position: relative;
+  object-fit: contain;
+  @include for-tablet {
+    margin: -18px 0 0 5px;
+    width: 134px;
+    height: 77px;
+  }
+  @include for-desktop {
+    margin: -12px 0 0 25px;
+    width: 138px;
+    height: 86px;
+  }
+  @include for-desktop-up {
+    margin: -12px 0 0 25px;
+    width: 138px;
+    height: 86px;
+  }
+}
+.imgItalian {
+  position: relative;
+  object-fit: contain;
+  @include for-tablet {
+    margin: -8px 0 0 5px;
+    width: 114px;
+    height: 77px;
+  }
+  @include for-desktop {
+    margin: 1px 0 0 18px;
+    width: 138px;
+    height: 86px;
+  }
+  @include for-desktop-up {
+    margin: 1px 0 0 18px;
+    width: 138px;
+    height: 86px;
+  }
+}
+.bensImg {
+  @include for-tablet {
+    height: 65px;
+  }
+  @include for-desktop {
+    height: 77px;
+  }
+  @include for-desktop-up {
+    height: 77px;
+  }
+}
+
+.simplyImg {
+  @include for-tablet {
+    height: 113px;
+  }
+  @include for-desktop {
+    height: 127px;
+  }
+  @include for-desktop-up {
+    height: 127px;
+  }
+}
+
+.imgCheken{
+  @include for-tablet {
+    height: 87px;
+  }
+  @include for-desktop {
+    height: 97px;
+  }
+  @include for-desktop-up {
+    height: 77px;
+  }
+}
+.imgJoollibean{
+  @include for-tablet {
+    height: 43px;
+    width: 105px;
+  }
+  @include for-desktop {
+    height: 97px;
+  }
+  @include for-desktop-up {
+    height: 97px;
   }
 }

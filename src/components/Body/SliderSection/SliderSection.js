@@ -9,7 +9,7 @@ import OperationalCosts from '../../../ui/carousel/OperationalCosts.png';
 import Analytics from '../../../ui/carousel/Analytics.png';
 
 const SliderSection = () => {
-  const [images] = useState([Orders, OperationalCosts, Analytics]);
+  const [images] = useState([Orders, OperationalCosts, Orders]);
   const [descriptions] = useState([
     {
       title: 'All your orders in one place',
