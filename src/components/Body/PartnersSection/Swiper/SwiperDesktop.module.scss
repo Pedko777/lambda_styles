@@ -4,6 +4,7 @@
   align-items: center;
 
   @include for-tablet {
+    margin: 1px 0 0 14px;
     width: 94px;
     height: 70px;
   }
@@ -12,6 +13,7 @@
     height: 86px;
   }
   @include for-desktop-up {
+    margin: 0 0 0 -25px;
     width: 138px;
     height: 86px;
   }
@@ -28,31 +30,15 @@
     height: 86px;
   }
   @include for-desktop-up {
-    margin: -5px 0 0 43px;
+    margin: -5px 0 0 108px;
     width: 138px;
     height: 86px;
   }
 }
-.imgWrpSimply {
-  @include for-tablet {
-    margin: -19px 0 0 0;
-    width: 104px;
-    height: 70px;
-  }
-  @include for-desktop {
-    margin: -19px 0 0 0;
-    width: 104px;
-    height: 70px;
-  }
-  @include for-desktop-up {
-    margin: -19px 0 0 0;
-    width: 104px;
-    height: 70px;
-  }
-}
+
 .imgWrpJolliebean {
   @include for-tablet {
-    margin: 14px 0 0 13px;
+    margin: 16px 0 0 17px;
     width: 94px;
     height: 70px;
   }
@@ -62,7 +48,7 @@
     height: 86px;
   }
   @include for-desktop-up {
-    margin: -1px 0 0 33px;
+    margin: -1px 0 0 75px;
     width: 138px;
     height: 86px;
   }
@@ -73,7 +59,7 @@
     height: 70px;
   }
   @include for-tablet {
-    margin: -2px 0 0 20px;
+    margin: 0px 0 0 26px;
     width: 104px;
     height: 70px;
   }
@@ -83,7 +69,7 @@
     height: 86px;
   }
   @include for-desktop-up {
-    margin: -2px 0 0 20px;
+    margin: 5px 0 0 63px;
     width: 138px;
     height: 86px;
   }
@@ -92,7 +78,7 @@
   position: relative;
   object-fit: contain;
   @include for-tablet {
-    margin: -18px 0 0 5px;
+    margin: -16px 0 0 19px;
     width: 134px;
     height: 77px;
   }
@@ -102,7 +88,7 @@
     height: 86px;
   }
   @include for-desktop-up {
-    margin: -12px 0 0 25px;
+    margin: -12px 0 0 19px;
     width: 138px;
     height: 86px;
   }
@@ -150,7 +136,7 @@
   }
 }
 
-.imgCheken{
+.imgCheken {
   @include for-tablet {
     height: 87px;
   }
@@ -158,10 +144,10 @@
     height: 97px;
   }
   @include for-desktop-up {
-    height: 77px;
+    height: 97px;
   }
 }
-.imgJoollibean{
+.imgJoollibean {
   @include for-tablet {
     height: 43px;
     width: 105px;

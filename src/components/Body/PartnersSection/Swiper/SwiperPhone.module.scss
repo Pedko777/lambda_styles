@@ -35,7 +35,6 @@
     width: 104px;
     height: 70px;
   }
- 
 }
 .imgWrpSimply {
   position: relative;
@@ -67,12 +66,12 @@
   }
 }
 
-.imgCheken{
+.imgCheken {
   @include for-phone {
     height: 87px;
   }
 }
-.imgJoollibean{
+.imgJoollibean {
   @include for-phone {
     height: 43px;
     width: 105px;

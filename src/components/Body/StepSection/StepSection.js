@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './StepSection.module.scss';
-
+import Media from "react-media"
 import question from '../../../ui/step/1.png';
 import body from '../../../ui/step/2.png';
 import heart from '../../../ui/step/3.png';
@@ -8,7 +8,7 @@ import heart from '../../../ui/step/3.png';
 const StepSection = () => {
   return (
     <section className={styles.stepSection}>
-      <div className={`container sectionWrapper `}>
+      <div className={styles.stepSectionWrp}>
         <div className={styles.sectionTop}>
           <p className={styles.sectionText}>ARE YOU READY?</p>
           <h3 className={styles.sectionTitle}>3 Simple Steps to Get Started</h3>
@@ -35,9 +35,14 @@ const StepSection = () => {
             <h4 className={styles.stepListItemTitle}>
               Onboarded In a Heartbeat
             </h4>
-            <p className={styles.stepListItemDesc}>
+            <Media query={{ maxWidth: 1023 }}>
+            {matches => (matches ? <p className={styles.stepListItemDesc}>
               Activated and live within a day
-            </p>
+            </p> : <p className={styles.stepListItemDesc}>
+              Activated and live <br/> within a day
+            </p>)}
+          </Media>
+            
           </li>
         </ul>
       </div>

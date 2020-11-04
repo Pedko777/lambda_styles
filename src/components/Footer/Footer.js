@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Media from 'react-media';
 import styles from './Footer.module.scss';
 
 import logo from '../../ui/footer/logo.png';
@@ -18,38 +18,77 @@ const Footer = () => {
           </a>
 
           <nav className={styles.footerNav}>
-            <ul className={styles.navList}>
-              <li className={styles.navListItem}>
-                <a href="#" className={styles.link}>
-                  Home
-                </a>
-              </li>
-              <li className={styles.navListItem}>
-                <a href="#" className={styles.link}>
-                  About
-                </a>
-              </li>
-              <li className={styles.navListItem}>
-                <a href="#" className={styles.link}>
-                  Contact
-                </a>
-              </li>
-              <li className={styles.navListItem}>
-                <a href="#" className={styles.link}>
-                  FAQ
-                </a>
-              </li>
-              <li className={styles.navListItem}>
-                <a href="#" className={styles.link}>
-                  Blog
-                </a>
-              </li>
-              <li className={styles.navListItem}>
-                <a href="#" className={styles.link}>
-                  Legal
-                </a>
-              </li>
-            </ul>
+            <Media query={{ maxWidth: 1023 }}>
+              {matches =>
+                matches ? (
+                  <ul className={styles.navList}>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        Home
+                      </a>
+                    </li>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        About
+                      </a>
+                    </li>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        Contact
+                      </a>
+                    </li>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        FAQ
+                      </a>
+                    </li>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        Blog
+                      </a>
+                    </li>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        Legal
+                      </a>
+                    </li>
+                  </ul>
+                ) : (
+                  <ul className={styles.navList}>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        Home
+                      </a>
+                    </li>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        Supplier
+                      </a>
+                    </li>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        About
+                      </a>
+                    </li>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        Contact
+                      </a>
+                    </li>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        FAQ
+                      </a>
+                    </li>
+                    <li className={styles.navListItem}>
+                      <a href="#" className={styles.link}>
+                        Legal
+                      </a>
+                    </li>
+                  </ul>
+                )
+              }
+            </Media>
           </nav>
           <ul className={styles.socialsList}>
             <li>

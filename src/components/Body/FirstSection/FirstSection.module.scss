@@ -24,9 +24,9 @@
     background-color: $bg-color;
   }
   @include for-desktop-up {
-    background: url(../../../ui/header/Boxes.png) no-repeat left -222px top 122px/403px,
-    url(../../../ui/header/Fruits.png) no-repeat right -151px top 109px/330px;
-  background-color: $bg-color;
+    background: url(../../../ui/header/Boxes.png) no-repeat left -124px top 122px/403px,
+      url(../../../ui/header/Fruits.png) no-repeat right -60px top 109px/330px;
+    background-color: $bg-color;
   }
 }
 .sectionDscr {
@@ -39,7 +39,7 @@
   @include for-tablet {
     padding-top: 194px;
   }
-  @include for-desktop{
+  @include for-desktop {
     padding-top: 195px;
   }
   @include for-desktop-up {
@@ -68,7 +68,6 @@
   @include for-desktop {
     margin: -2px 0 10px -5px;
     text-align: center;
-
   }
   @include for-desktop-up {
     margin: -2px 0 10px -5px;
@@ -99,7 +98,7 @@
     text-align: center;
     padding-bottom: 108px;
   }
-  @include for-desktop{
+  @include for-desktop {
     font-size: 40px;
     font-weight: 600;
     font-stretch: normal;

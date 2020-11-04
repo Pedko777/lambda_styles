@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './FormSection.module.scss';
+import Media from 'react-media';
 
 import arrow from '../../../ui/form/arrow.png';
 import arrow2 from '../../../ui/form/arrow2.png';
@@ -16,13 +17,24 @@ const FormSection = () => {
   return (
     <section className={styles.formSection}>
       <div className={styles.bgOval}></div>
-      <div className={`container `}>
+      <div>
         <div className={styles.content}>
           <div className={styles.formTop}>
             <p className={styles.sectionText}>let’s do this</p>
-            <h3 className={styles.sectionTitle}>
-              Fill up the form and we’ll get in touch within a few hours
-            </h3>
+            <Media query={{ maxWidth: 1279 }}>
+              {matches =>
+                matches ? (
+                  <h3 className={styles.sectionTitle}>
+                    Fill up the form and we’ll get in touch within a few hours
+                  </h3>
+                ) : (
+                  <h3 className={styles.sectionTitle}>
+                    Fill up the form and we’ll get in touch within
+                    <br />a few hours
+                  </h3>
+                )
+              }
+            </Media>
           </div>
           <div className={styles.meetUs}>
             <div className={styles.arrowBox}>

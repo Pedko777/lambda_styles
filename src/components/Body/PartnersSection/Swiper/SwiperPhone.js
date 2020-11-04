@@ -22,25 +22,29 @@ const SwiperPhone = () => {
       spaceBetween={0}
       slidesPerView={2}
     >
-  <SwiperSlide>
+      <SwiperSlide>
         <div className={styles.imgWrpCheken}>
-          <img src={goCheken} alt={goCheken.alt} className={styles.imgCheken}/>
+          <img src={goCheken} alt={goCheken.alt} className={styles.imgCheken} />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.imgWrpJolliebean}>
-          <Jolliebean className={styles.imgJoollibean}/>
+          <Jolliebean className={styles.imgJoollibean} />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.imgWrpBens}>
-          <Bens  className={styles.bensImg}/>
+          <Bens className={styles.bensImg} />
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
         <div className={styles.imgWrpSimply}>
-          <img src={SimplyWrapps} alt={SimplyWrapps.alt} className={styles.simplyImg} />
+          <img
+            src={SimplyWrapps}
+            alt={SimplyWrapps.alt}
+            className={styles.simplyImg}
+          />
         </div>
       </SwiperSlide>
       <SwiperSlide>

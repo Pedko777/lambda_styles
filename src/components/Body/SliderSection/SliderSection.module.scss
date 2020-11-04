@@ -79,10 +79,8 @@
 .imgWrapper {
   position: relative;
   border: solid 53px #fcede8;
-  border: solid 53px #ff4000;
   border-radius: 53px;
   background-color: #fcede8;
-  // background-color: #ff4000;
   z-index: 1;
   @include for-phone {
     margin: 0 auto;
@@ -102,7 +100,10 @@
     width: 490px;
   }
   @include for-desktop-up {
-    height: 596px;
+    position: absolute;
+    right: -532px;
+    height: 591px;
+    width: 1100px;
   }
 
   .contentImg {
@@ -142,7 +143,7 @@
   align-items: center;
   justify-content: space-between;
   @include for-phone {
-    margin-top: -5px;
+    margin-top: -15px;
     margin-bottom: 40px;
     min-width: 186px;
   }
@@ -284,7 +285,6 @@
     width: 288px;
     line-height: 1.4;
     letter-spacing: -0.3px;
-    line-height: normal;
     letter-spacing: normal;
     font-stretch: normal;
   }

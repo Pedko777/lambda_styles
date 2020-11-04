@@ -11,7 +11,7 @@
     padding: 108px 0 81px;
   }
   @include for-desktop {
-    padding: 250px 0 116px;
+    padding: 250px 40px 116px;
   }
   @include for-desktop-up {
     padding: 228px 0 39px;
@@ -80,11 +80,9 @@
   }
   @include for-desktop {
     height: 550px;
-    justify-content: space-between;
   }
   @include for-desktop-up {
     height: 550px;
-    justify-content: space-around;
   }
 
   //* header and descriptions *//
@@ -122,11 +120,12 @@
     letter-spacing: 1.2px;
     @include for-desktop {
       text-align: left;
-
+      letter-spacing: 0.8px;
+      margin-left: -5px;
     }
     @include for-desktop-up {
       text-align: left;
-
+      letter-spacing: 0.8px;
     }
   }
   .sectionTitle {
@@ -151,16 +150,29 @@
       line-height: 45px;
     }
     @include for-desktop {
-      padding: 22px 0 91px;
+      padding: 18px 0 113px;
       text-align: left;
       width: 80%;
       margin: 0;
+      font-size: 40px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: -0.3px;
+      margin-left: -5px;
     }
     @include for-desktop-up {
-      padding: 22px 0 91px;
+      padding: 18px 0 91px;
       text-align: left;
-      width: 85%;
+      width: 100%;
       margin: 0;
+      font-size: 40px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: -0.5px;
     }
   }
 
@@ -180,11 +192,12 @@
     }
     @include for-desktop {
       align-self: start;
-      left: 25px;
+      left: 2px;
     }
     @include for-desktop-up {
       align-self: start;
-      left: 25px;
+      top: 40px;
+      left: 76px;
     }
     //* countries arrow *//
     .arrowBox {
@@ -206,13 +219,14 @@
         letter-spacing: 1px;
       }
       @include for-desktop {
-        left: -22px;
+        left: -19px;
         top: -28px;
-      
+        letter-spacing: 0.5px;
       }
       @include for-desktop-up {
-        top: -46px;
-        left: -53px;
+        left: -50px;
+        top: -25px;
+        letter-spacing: 0.5px;
       }
       .imgArrow {
         width: 109px;
@@ -228,12 +242,12 @@
           right: 155px;
         }
         @include for-desktop {
-          right: 140px;
-          top: -40px;
+          right: 153px;
+          top: -30px;
         }
         @include for-desktop-up {
-          right: 140px;
-          top: -40px;
+          right: 157px;
+          top: -35px;
         }
       }
     }
@@ -250,12 +264,13 @@
       box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
       background-color: #fff;
       border-radius: 8px;
+
       .countryListItem {
         display: flex;
         align-items: center;
         justify-content: flex-start;
         width: 40%;
-  
+
         .countryListItemImg {
           display: inline;
           width: 15px;
@@ -271,7 +286,6 @@
           letter-spacing: 0.2px;
           @include for-tablet {
             letter-spacing: 0.2px;
-
           }
         }
       }
@@ -305,7 +319,6 @@
     position: relative;
     max-width: 447px;
     height: 496px;
-    // margin-left: 80px;
     @include for-phone {
       position: relative;
       max-width: 100%;
@@ -321,11 +334,12 @@
       margin-left: -3px;
     }
     @include for-desktop {
-      margin-left: 34px;
+      margin-left: 13px;
       margin-top: 110px;
     }
     @include for-desktop-up {
-      margin-left: 34px;
+      margin-right: 70px;
+      margin-top: -12px;
     }
     .formBg {
       position: absolute;
@@ -346,7 +360,7 @@
         top: 9%;
         left: 5%;
         background: url(../../../ui/form/bgForm1.png) no-repeat right top 15px/98px
-        182px,
+            182px,
           url(../../../ui/form/bgForm2.png) no-repeat left 62% bottom 33px/98px
             182px;
       }
@@ -382,7 +396,7 @@
         height: 486px;
         padding: 32px 27px 32px 32px;
       }
-      
+
       //* Arrow form*//
       .arrowBox {
         position: absolute;
@@ -403,12 +417,12 @@
           left: 86px;
         }
         @include for-desktop {
-          top: -155px;
-          left: 56px;
+          top: -165px;
+          left: 69px;
         }
         @include for-desktop-up {
-          top: -55px;
-          left: 56px;
+          top: -60px;
+          left: 69px;
         }
         .arrowBoxImg {
           position: absolute;
@@ -441,11 +455,11 @@
         }
         @include for-desktop {
           text-align-last: left;
-          padding-bottom: 40px;
+          padding-bottom: 49px;
         }
         @include for-desktop-up {
           text-align-last: left;
-          padding-bottom: 40px;
+          padding-bottom: 50px;
         }
         .formTitle {
           font-size: 18px;
@@ -509,12 +523,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 50px;
+
   @include for-phone {
     flex-wrap: wrap;
     margin-bottom: 39px;
   }
   @include for-tablet {
+    margin-bottom: 45px;
+  }
+  @include for-desktop {
+    margin-bottom: 45px;
+  }
+  @include for-desktop-up {
     margin-bottom: 45px;
   }
 
@@ -606,12 +626,30 @@
     width: 100%;
   }
   @include for-tablet {
-      font-weight: 500;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: 0.3px;
-      width: 44%;
-      margin-bottom: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    width: 44%;
+    margin-bottom: 14px;
+  }
+  @include for-desktop {
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    width: 44%;
+    margin-bottom: 14px;
+  }
+  @include for-desktop-up {
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    width: 44%;
+    margin-bottom: 14px;
   }
 }

@@ -21,9 +21,6 @@
       padding: 0 76px 0 64px;
       height: 80px;
     }
-    @include for-desktop-up {
-
-    }
   }
 }
 
@@ -37,6 +34,9 @@
 
   @include for-phone {
     justify-content: space-between;
+  }
+  @include for-desktop-up {
+    margin-right: 12px;
   }
 }
 
