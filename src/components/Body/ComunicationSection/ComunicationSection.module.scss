@@ -21,7 +21,7 @@
     padding: 64px 0 61px;
     display: flex;
     flex-wrap: nowrap;
-    height: 586px;
+    max-height: 586px;
     box-shadow: 0 -40px 5px 27px hsla(0, 0%, 100%, 0.5);
   }
 }
@@ -57,7 +57,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-width: 1035px;
+    max-width: 1035px;
   }
   .imgWrapper {
     @include for-phone {
@@ -74,10 +74,10 @@
       margin-bottom: 64px;
     }
     @include for-desktop {
-      min-width: 565px;
+      max-width: 565px;
     }
     @include for-desktop-up {
-      min-width: 565px;
+      max-width: 565px;
     }
     .img {
       transition: 0.4s;
@@ -344,7 +344,5 @@
   }
   @include for-desktop-up {
     width: 100%;
-    // margin-top: 50px;
-    // margin-left: 30px;
   }
 }

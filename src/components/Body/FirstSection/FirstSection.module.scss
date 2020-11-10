@@ -24,8 +24,8 @@
     background-color: $bg-color;
   }
   @include for-desktop-up {
-    background: url(../../../ui/header/Boxes.png) no-repeat left -124px top 122px/403px,
-      url(../../../ui/header/Fruits.png) no-repeat right -60px top 109px/330px;
+    background: url(../../../ui/header/Boxes.png) no-repeat left -128px top 122px/403px,
+      url(../../../ui/header/Fruits.png) no-repeat right -62px top 109px/330px;
     background-color: $bg-color;
   }
 }

@@ -81,4 +81,7 @@
       margin-left: -13px;
     }
   }
+  @include for-desktop-up {
+    margin-left: -2px;
+  }
 }
