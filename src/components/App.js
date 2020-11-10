@@ -12,6 +12,7 @@ import OrderSection from './Body/OrderSection/OrderSection';
 import StepSection from './Body/StepSection/StepSection';
 import FormSection from './Body/FormSection/FormSection';
 import Footer from './Footer/Footer';
+import PresentationSection from './Body/PresentationSection/PresentationSection';
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
           <DemoSection />
           <PartnersSection />
           {/* <SliderSection /> */}
-          <ComunicationSection />
+          <PresentationSection />
+          {/* <ComunicationSection /> */}
           <OrderSection />
           <StepSection />
           <FormSection />

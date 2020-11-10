@@ -1,0 +1,311 @@
+@import 'mixin.scss';
+@import 'variables.scss';
+
+.sectionWrapper {
+  background-color: $bg-color;
+
+  @include for-phone {
+    padding: 68px 0 57px;
+  }
+  @include for-tablet {
+    padding: 68px 0 67px;
+  }
+  @include for-desktop {
+    padding: 88px 0 54px;
+  }
+  @include for-desktop-up {
+    padding: 88px 0 54px;
+  }
+  position: relative;
+  z-index: 0;
+  .contentWrapper {
+    margin: 0 auto;
+    max-width: 1135px;
+    @include for-phone {
+      padding: 0 24px;
+    }
+    @include for-tablet {
+      padding: 0 24px;
+    }
+    @include for-desktop {
+      padding: 0 24px;
+    }
+    @include for-desktop-up {
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 415px;
+      position: relative;
+      z-index: 2;
+      @include for-phone {
+        align-items: baseline;
+        height: auto;
+      }
+      @include for-tablet {
+        height: auto;
+        align-items: center;
+      }
+      .contentImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 624px;
+        margin-right: 98px;
+        @include for-phone {
+          order: 2;
+          width: 343px;
+          height: 206px;
+          align-self: center;
+          margin: 0;
+          margin-bottom: 55px;
+        }
+        @include for-tablet {
+          order: 2;
+          width: 469px;
+          top: 26px;
+          margin-right: 34px;
+          align-self: center;
+          margin: 0;
+          margin-bottom: 95px;
+          max-height: 288px;
+        }
+        @include for-desktop {
+          width: 530px;
+          margin-right: 35px;
+        }
+        .img {
+          @include for-phone {
+            max-width: 100%;
+            margin-left: -30px;
+          }
+          @include for-tablet {
+            max-width: 100%;
+            margin-left: -30px;
+          }
+          @include for-desktop {
+            max-width: 466px;
+            margin-top: 70px;
+          }
+          @include for-desktop-up {
+            max-width: 620px;
+            min-height: 320px;
+            margin-left: -44px;
+            margin-top: 22px;
+          }
+        }
+        .animationWrapper {
+          transition: 0.4s;
+          width: 100%;
+          @include for-tablet {
+            max-width: 370px;
+          }
+          @include for-desktop {
+            max-width: 510px;
+            // margin-top: -35px;
+            margin-left: 30px;
+          }
+          @include for-desktop-up {
+            max-width: 570px;
+            margin-top: -35px;
+          }
+        }
+      }
+      .contentTitleBox {
+        width: 36%;
+        position: relative;
+        @include for-phone {
+          width: 100%;
+          text-align: center;
+          margin-top: 36px;
+        }
+        @include for-tablet {
+          width: 100%;
+          text-align: center;
+        }
+        @include for-desktop {
+          width: 40%;
+          margin-bottom: 57px;
+        }
+        @include for-desktop-up {
+          margin-bottom: 57px;
+        }
+        .line::after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 408px;
+          height: 1px;
+          opacity: 0.2;
+          background-color: $primary-text-color;
+          @include for-phone {
+            display: none;
+          }
+          @include for-tablet {
+            display: none;
+          }
+        }
+        .line {
+          .contentButtons {
+            @include for-phone {
+              margin-bottom: 70px;
+              align-self: center;
+              display: flex;
+              justify-content: space-around;
+            }
+            @include for-tablet {
+              margin-bottom: 63px;
+            }
+            @include for-desktop {
+              margin-bottom: 64px;
+            }
+            @include for-desktop-up {
+              margin-bottom: 64px;
+            }
+            .btn {
+              font-family: 'Manrope Semibold';
+              text-transform: uppercase;
+              width: 128px;
+              height: 48px;
+              font-size: 13px;
+              letter-spacing: 0.8px;
+              font-weight: 600;
+              outline: none;
+              color: #787c80;
+              background-color: transparent;
+              border-radius: 6px;
+              border: solid 1px rgba(144, 149, 153, 0.35);
+              transition: 0.4s;
+              cursor: pointer;
+            }
+            .btnActive {
+              font-family: 'Manrope Semibold';
+              text-transform: uppercase;
+              width: 128px;
+              height: 48px;
+              font-weight: 600;
+              outline: none;
+              font-size: 13px;
+              letter-spacing: 0.7px;
+              color: #fa4353;
+
+              border-radius: 6px;
+              border: solid 1px rgba(144, 149, 153, 0.35);
+              box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.11);
+              background-color: #fff;
+              transition: 0.4s;
+              cursor: pointer;
+            }
+            button:first-of-type {
+              @include for-phone {
+                margin: 0;
+              }
+              margin-right: 24px;
+            }
+          }
+          .contentTitle {
+            font-family: 'Manrope Semibold';
+            font-size: 32px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: left;
+            @include for-phone {
+              text-align: center;
+              margin-top: -18px;
+              margin-bottom: 48px;
+            }
+            @include for-tablet {
+              text-align: center;
+              margin-bottom: 48px;
+            }
+            @include for-desktop {
+              line-height: 1.8;
+              margin-bottom: 34px;
+            }
+            @include for-desktop-up {
+              line-height: 1.7;
+              margin-bottom: 34px;
+            }
+          }
+        }
+      }
+      .contentText {
+        width: 36%;
+        @include for-phone {
+          width: 100%;
+          order: 3;
+          text-align: center;
+        }
+        @include for-tablet {
+          width: 100%;
+          order: 3;
+          text-align: center;
+        }
+        @include for-desktop {
+          width: 41%;
+        }
+        .descTitle {
+          font-family: 'Manrope Bold';
+          color: $primary-text-color;
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 1.67;
+          font-stretch: normal;
+          font-style: normal;
+          letter-spacing: normal;
+          text-align: center;
+          @include for-phone {
+            margin-bottom: 8px;
+          }
+          @include for-tablet {
+            margin-bottom: 8px;
+          }
+          @include for-desktop {
+            text-align-last: left;
+            margin-bottom: 10px;
+          }
+          @include for-desktop-up {
+            text-align-last: left;
+            margin-bottom: 10px;
+          }
+        }
+        .descText {
+          color: $secondary-text-color;
+          font-family: 'Manrope Regular';
+          text-align: left;
+          font-size: 18px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          @include for-phone {
+            text-align: center;
+            line-height: 1.7;
+            letter-spacing: 0.1px;
+          }
+          @include for-tablet {
+            text-align: center;
+            line-height: 1.7;
+            letter-spacing: 0.1px;
+            width: 300px;
+            margin: 0 auto;
+          }
+          @include for-desktop {
+            line-height: 1.7;
+            letter-spacing: 0.1px;
+          }
+          @include for-desktop-up {
+            line-height: 1.7;
+            letter-spacing: 0.1px;
+          }
+        }
+      }
+    }
+  }
+}
