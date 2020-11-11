@@ -3,9 +3,8 @@
 
 .sectionWrapper {
   background-color: $bg-color;
-
   @include for-phone {
-    padding: 68px 0 57px;
+    padding: 50px 0 57px;
   }
   @include for-tablet {
     padding: 68px 0 67px;

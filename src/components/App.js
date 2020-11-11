@@ -13,6 +13,7 @@ import StepSection from './Body/StepSection/StepSection';
 import FormSection from './Body/FormSection/FormSection';
 import Footer from './Footer/Footer';
 import PresentationSection from './Body/PresentationSection/PresentationSection';
+import NewSliderSection from './Body/NewSliderSection/NewSliderSection';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <FirstSection />
           <DemoSection />
           <PartnersSection />
+          <NewSliderSection />
           {/* <SliderSection /> */}
           <PresentationSection />
           {/* <ComunicationSection /> */}
