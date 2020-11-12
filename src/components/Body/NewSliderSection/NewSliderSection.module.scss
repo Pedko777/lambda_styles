@@ -3,77 +3,154 @@
 
 .sectionContainer {
   padding: 60px 0 70px;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   @include for-phone {
     padding: 0 0 65px;
   }
   @include for-tablet {
-    padding: 0 0 62px;
+    padding: 5px 0 65px;
+  }
+  @include for-desktop {
+    padding: 11px 0 65px;
+    height: 800px;
+  }
+  @include for-desktop-up {
+    padding: 11px 0 65px;
+    height: 800px;
   }
   .content {
     max-width: 1128px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
     position: relative;
-    // align-items: flex-start;
     height: auto;
     @include for-phone {
       align-items: center;
-      //   padding: 0 36px;
     }
     @include for-tablet {
-      padding: 0 36px;
+      flex-direction: column;
+    }
+    @include for-desktop {
+      justify-content: space-between;
+    }
+    @include for-desktop-up {
+      justify-content: space-between;
     }
   }
   .carousel {
     width: 100%;
     height: 100%;
     border: solid 1px #fcede8;
-    border: solid 1px red;
-
     border-radius: 53px;
     background-color: #fcede8;
-    background-color: #751d00;
+
     @include for-phone {
       border-radius: 53px 0 0 53px;
       height: 392px;
       width: 100%;
       margin-bottom: 57px;
     }
+    @include for-tablet {
+      border-radius: 53px 0 0 53px;
+      width: 100%;
+      margin-left: 67px;
+      margin-bottom: 60px;
+    }
+    @include for-desktop {
+      z-index: 0;
+      border-radius: 53px 0 0 53px;
+      position: absolute;
+      height: 588px;
+      right: -532px;
+    }
+    @include for-desktop-up {
+      z-index: 0;
+
+      position: absolute;
+      height: 588px;
+      right: -532px;
+    }
     .slider {
       display: flex;
       align-items: center;
-      height: 100%;
-      width: 100%;
       box-sizing: border-box;
       margin: 0;
       padding: 0;
       transition: all 0.5s;
       overflow: hidden;
-
+      height: 100%;
+      width: 100%;
       .slide {
+        z-index: 0;
         min-width: 100%;
-        height: 100%;
         transition: 0.5s;
         overflow: hidden;
+        @include for-phone {
+          height: 588px;
+        }
+        @include for-tablet {
+          height: 588px;
+        }
         .slideImg {
           @include for-phone {
             position: absolute;
-            top: 40px;
+            top: 140px;
             left: 18px;
             height: 330px;
             object-fit: contain;
           }
-        }
-        .slideImgLast {
-          @include for-phone {
+          @include for-tablet {
             position: absolute;
             top: 40px;
+            left: -15px;
+            width: 1055px;
+            object-fit: contain;
+          }
+          @include for-desktop {
+            // position: absolute;
+            margin-top: 50px;
+            margin-left: -15px;
+            width: 1055px;
+            object-fit: contain;
+          }
+          @include for-desktop-up {
+            margin-top: 50px;
+            margin-left: -15px;
+            width: 1055px;
+            object-fit: contain;
+          }
+        }
+        .slideImgLast {
+          z-index: 0;
+          @include for-phone {
+            position: absolute;
+            top: 130px;
             left: 50px;
             height: 330px;
+            object-fit: contain;
+          }
+          @include for-tablet {
+            z-index: 0;
+            position: absolute;
+            top: 40px;
+            left: 55px;
+            width: 900px;
+            object-fit: contain;
+          }
+          @include for-desktop {
+            z-index: 0;
+            margin-top: 10px;
+            margin-left: 45px;
+            width: 900px;
+            object-fit: contain;
+          }
+          @include for-desktop-up {
+            z-index: 0;
+            margin-top: 10px;
+            margin-left: 45px;
+            width: 900px;
             object-fit: contain;
           }
         }
@@ -90,7 +167,7 @@
       min-width: 186px;
     }
     @include for-tablet {
-      margin: -26px 40px 0 -10px;
+      margin: 7px 0 0;
       position: static;
       align-self: flex-start;
       min-width: 186px;
@@ -113,8 +190,7 @@
     padding: 0 35px;
   }
   @include for-tablet {
-    padding: 0 30px;
-    margin: -35px 0 62px;
+    width: 65%;
   }
   @include for-desktop {
     padding: 0;
@@ -132,7 +208,6 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-
     margin: 0;
     padding: 0;
     transition: all 0.5s;
@@ -168,7 +243,6 @@
           line-height: 1.4;
           letter-spacing: -0.4px;
           font-stretch: normal;
-          margin-left: -33px;
         }
         @include for-desktop {
           text-align: left;
@@ -210,8 +284,7 @@
           line-height: 1.67;
           letter-spacing: 0.1px;
           text-align: left;
-          width: 370px;
-          margin-left: -33px;
+          width: 380px;
         }
         @include for-desktop {
           text-align: left;
@@ -271,4 +344,26 @@
 }
 .img {
   opacity: 1;
+}
+
+.descriptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include for-tablet {
+    padding: 0 30px 0 50px;
+    width: 100%;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  @include for-desktop {
+    flex-direction: column-reverse;
+    padding: 120px 0 0 70px;
+  }
+  @include for-desktop-up {
+    flex-direction: column-reverse;
+    padding: 115px 0 0 68px;
+  }
 }

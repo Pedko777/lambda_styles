@@ -52,89 +52,93 @@ const NewSliderSection = () => {
             </div>
           </div>
         </div>
-        <ul className={styles.btnWrapper}>
-          <li>
-            <button className={styles.btn} onClick={prev}>
-              <Left className={styles.img} />
-            </button>
-          </li>
-          <li>
-            <ul className={styles.paginationList}>
-              <li>
-                <button
-                  className={
-                    x === 0 ? styles.paginationBtnActive : styles.paginationBtn
-                  }
-                  onClick={() => {
-                    setX(0);
-                  }}
-                ></button>
-              </li>
-              <li>
-                <button
-                  className={
-                    x === -100
-                      ? styles.paginationBtnActive
-                      : styles.paginationBtn
-                  }
-                  onClick={() => {
-                    setX(-100);
-                  }}
-                ></button>
-              </li>
-              <li>
-                <button
-                  className={
-                    x === -200
-                      ? styles.paginationBtnActive
-                      : styles.paginationBtn
-                  }
-                  onClick={() => {
-                    setX(-200);
-                  }}
-                ></button>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <button className={styles.btn} onClick={next}>
-              <Right className={styles.img} />
-            </button>
-          </li>
-        </ul>
-        <div className={styles.textCarousel}>
-          <div className={styles.slider}>
-            <div
-              className={styles.slide}
-              style={{ transform: `translateX(${x}%` }}
-            >
-              <h3 className={styles.sectionTitle}>
-                All your orders in one place
-              </h3>
-              <p className={styles.descriprionText}>
-                Say no more to chunky emails and messy WhatsApp messages.
-                Receive and manage your orders in one platform
-              </p>
-            </div>
-            <div
-              className={styles.slide}
-              style={{ transform: `translateX(${x}%` }}
-            >
-              <h3 className={styles.sectionTitle}>Some text</h3>
-              <p className={styles.descriprionText}>
-                Say no more to chunky emails and messy WhatsApp messages.
-                Receive and manage your orders in one platform
-              </p>
-            </div>
-            <div
-              className={styles.slide}
-              style={{ transform: `translateX(${x}%` }}
-            >
-              <h3 className={styles.sectionTitle}>Bla bla bla</h3>
-              <p className={styles.descriprionText}>
-                Say no more to chunky emails and messy WhatsApp messages.
-                Receive and manage your orders in one platform
-              </p>
+        <div className={styles.descriptions}>
+          <ul className={styles.btnWrapper}>
+            <li>
+              <button className={styles.btn} onClick={prev}>
+                <Left className={styles.img} />
+              </button>
+            </li>
+            <li>
+              <ul className={styles.paginationList}>
+                <li>
+                  <button
+                    className={
+                      x === 0
+                        ? styles.paginationBtnActive
+                        : styles.paginationBtn
+                    }
+                    onClick={() => {
+                      setX(0);
+                    }}
+                  ></button>
+                </li>
+                <li>
+                  <button
+                    className={
+                      x === -100
+                        ? styles.paginationBtnActive
+                        : styles.paginationBtn
+                    }
+                    onClick={() => {
+                      setX(-100);
+                    }}
+                  ></button>
+                </li>
+                <li>
+                  <button
+                    className={
+                      x === -200
+                        ? styles.paginationBtnActive
+                        : styles.paginationBtn
+                    }
+                    onClick={() => {
+                      setX(-200);
+                    }}
+                  ></button>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button className={styles.btn} onClick={next}>
+                <Right className={styles.img} />
+              </button>
+            </li>
+          </ul>
+          <div className={styles.textCarousel}>
+            <div className={styles.slider}>
+              <div
+                className={styles.slide}
+                style={{ transform: `translateX(${x}%` }}
+              >
+                <h3 className={styles.sectionTitle}>
+                  All your orders in one place
+                </h3>
+                <p className={styles.descriprionText}>
+                  Say no more to chunky emails and messy WhatsApp messages.
+                  Receive and manage your orders in one platform
+                </p>
+              </div>
+              <div
+                className={styles.slide}
+                style={{ transform: `translateX(${x}%` }}
+              >
+                <h3 className={styles.sectionTitle}>Some text</h3>
+                <p className={styles.descriprionText}>
+                  Say no more to chunky emails and messy WhatsApp messages.
+                  Receive and manage your orders in one platform
+                </p>
+              </div>
+              <div
+                className={styles.slide}
+                style={{ transform: `translateX(${x}%` }}
+              >
+                <h3 className={styles.sectionTitle}>Bla bla bla</h3>
+                <p className={styles.descriprionText}>
+                  Say no more to chunky emails and messy WhatsApp messages.
+                  Receive and manage your orders in one platform
+                </p>
+              </div>
             </div>
           </div>
         </div>

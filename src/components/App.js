@@ -26,9 +26,7 @@ const App = () => {
           <DemoSection />
           <PartnersSection />
           <NewSliderSection />
-          {/* <SliderSection /> */}
           <PresentationSection />
-          {/* <ComunicationSection /> */}
           <OrderSection />
           <StepSection />
           <FormSection />
