@@ -9,7 +9,7 @@
     padding: 0 0 65px;
   }
   @include for-tablet {
-    padding: 5px 0 65px;
+    padding: 5px 0 61px;
   }
   @include for-desktop {
     padding: 11px 0 65px;
@@ -57,7 +57,7 @@
     @include for-tablet {
       border-radius: 53px 0 0 53px;
       width: 100%;
-      margin-left: 67px;
+      margin-left: 69px;
       margin-bottom: 60px;
     }
     @include for-desktop {
@@ -107,7 +107,7 @@
             position: absolute;
             top: 40px;
             left: -15px;
-            width: 1055px;
+            width: 1064px;
             object-fit: contain;
           }
           @include for-desktop {
@@ -168,7 +168,7 @@
       min-width: 186px;
     }
     @include for-tablet {
-      margin: 7px 0 0;
+      margin: 8px 0 0 4px;
       position: static;
       align-self: flex-start;
       min-width: 186px;
@@ -245,6 +245,7 @@
           line-height: 1.4;
           letter-spacing: -0.4px;
           font-stretch: normal;
+          margin-left: 3px;
         }
         @include for-desktop {
           text-align: left;
@@ -288,6 +289,7 @@
           letter-spacing: 0.1px;
           text-align: left;
           width: 380px;
+          margin-left: 3px;
         }
         @include for-desktop {
           text-align: left;

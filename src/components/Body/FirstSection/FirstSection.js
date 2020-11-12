@@ -4,7 +4,7 @@ import Media from 'react-media';
 
 const FirstSection = () => (
   <section className={styles.firstSection}>
-    <div className={`container sectionWrapper`}>
+    <div className={`container `}>
       <div className={styles.sectionDscr}>
         <div className={styles.titleWrapper}>
           <h2 className={styles.firstTitle}>FOR A SMARTER SUPPLY CHAIN</h2>

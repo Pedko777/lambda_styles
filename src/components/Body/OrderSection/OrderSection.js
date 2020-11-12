@@ -50,8 +50,15 @@ const OrderSection = () => {
             <img src={screen3} alt={screen1.name} className={styles.img} />
             <div className={styles.listItemDescWrp}>
               <p className={styles.listItemDesc}>Send Order</p>
-
-              <Arrow className={styles.listItemDescImg} />
+              <Media queries={{ small: { maxWidth: 767 } }}>
+                {matches =>
+                  matches.small ? (
+                    <Arrow className={styles.listItemDescImg} />
+                  ) : (
+                    <Ok />
+                  )
+                }
+              </Media>
             </div>
           </li>
         </ul>

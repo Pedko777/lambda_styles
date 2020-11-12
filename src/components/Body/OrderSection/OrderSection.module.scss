@@ -74,7 +74,7 @@
       font-size: 32px;
       line-height: 44px;
       letter-spacing: -0.5px;
-      margin-bottom: 23px;
+      margin-bottom: 25px;
     }
     @include for-desktop {
       text-align: left;
@@ -172,7 +172,7 @@
   @include for-tablet {
     flex-direction: column;
     background-color: transparent;
-    padding-bottom: 123px;
+    padding-bottom: 121px;
   }
   @include for-desktop {
     padding-bottom: 105px;
@@ -182,7 +182,7 @@
   }
   .listItem {
     background-color: #e1eff0;
-    // background-color: #146469;
+
     flex-direction: column;
     display: flex;
     align-items: center;

@@ -3,14 +3,14 @@
 
 .stepSection {
   background-color: $bg-color;
-  // background-color: red;
+  background-color: red;
   position: relative;
   z-index: 2;
   @include for-phone {
     padding: 76px 0 81px;
   }
   @include for-tablet {
-    padding: 87px 0 80px;
+    padding: 90px 0 80px;
   }
   @include for-desktop {
     padding: 91px 0;
@@ -120,7 +120,7 @@
         letter-spacing: 0;
       }
       @include for-tablet {
-        padding: 9px 0 8px;
+        padding: 10px 0 6px;
       }
       @include for-desktop {
         padding: 24px 0 8px;
@@ -133,7 +133,7 @@
       }
     }
     .stepListItemDesc {
-      margin: 0 auto;
+      // margin: 0 auto;
       font-family: 'Manrope Semibold';
       text-align: center;
       font-size: 14px;
@@ -145,8 +145,12 @@
         max-width: 90%;
       }
       @include for-tablet {
-        max-width: 45%;
+        max-width: 100%;
+        letter-spacing: -0.1px;
+        margin-left: -1px;
         margin-bottom: 20px;
+
+        // margin-left: -2px;
       }
       @include for-desktop {
         max-width: 100%;

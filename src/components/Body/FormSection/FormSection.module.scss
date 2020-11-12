@@ -4,11 +4,12 @@
 .formSection {
   position: relative;
   background-image: linear-gradient(#fff, #fafafa);
+
   @include for-phone {
     padding: 71px 0 85px;
   }
   @include for-tablet {
-    padding: 108px 0 81px;
+    padding: 110px 0 81px;
   }
   @include for-desktop {
     padding: 250px 40px 116px;
