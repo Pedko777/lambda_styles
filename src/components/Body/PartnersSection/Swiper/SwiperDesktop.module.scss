@@ -9,12 +9,13 @@
     height: 70px;
   }
   @include for-desktop {
-    width: 138px;
+    margin: 0 0 0 20px;
+    width: 128px;
     height: 86px;
   }
   @include for-desktop-up {
-    margin: 0 0 0 -25px;
-    width: 138px;
+    margin: -5px 0 0 -10px;
+    width: 128px;
     height: 86px;
   }
 }
@@ -30,7 +31,7 @@
     height: 86px;
   }
   @include for-desktop-up {
-    margin: -5px 0 0 108px;
+    margin: -9px 0 0 105px;
     width: 138px;
     height: 86px;
   }
@@ -43,12 +44,12 @@
     height: 70px;
   }
   @include for-desktop {
-    margin: -1px 0 0 33px;
+    margin: -1px 0 0 37px;
     width: 138px;
     height: 86px;
   }
   @include for-desktop-up {
-    margin: -1px 0 0 75px;
+    margin: -4px 0 0 77px;
     width: 138px;
     height: 86px;
   }
@@ -64,12 +65,12 @@
     height: 70px;
   }
   @include for-desktop {
-    margin: 5px 0 0 45px;
+    margin: 5px 0 0 55px;
     width: 138px;
     height: 86px;
   }
   @include for-desktop-up {
-    margin: 5px 0 0 63px;
+    margin: 2px 0 0 70px;
     width: 138px;
     height: 86px;
   }
@@ -83,12 +84,12 @@
     height: 77px;
   }
   @include for-desktop {
-    margin: -12px 0 0 25px;
+    margin: -12px 0 0 37px;
     width: 138px;
     height: 86px;
   }
   @include for-desktop-up {
-    margin: -12px 0 0 19px;
+    margin: -16px 0 0 28px;
     width: 138px;
     height: 86px;
   }
@@ -103,12 +104,12 @@
   }
   @include for-desktop {
     margin: 1px 0 0 18px;
-    width: 138px;
+    width: 130px;
     height: 86px;
   }
   @include for-desktop-up {
     margin: 1px 0 0 18px;
-    width: 138px;
+    width: 130px;
     height: 86px;
   }
 }

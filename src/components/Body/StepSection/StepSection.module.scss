@@ -130,6 +130,7 @@
       @include for-desktop-up {
         padding: 26px 0 8px;
         margin-left: -2px;
+        margin-bottom: -2px;
       }
     }
     .stepListItemDesc {
@@ -158,6 +159,7 @@
       }
       @include for-desktop-up {
         max-width: 100%;
+
         margin-left: -2px;
       }
     }

@@ -69,10 +69,9 @@
     }
     @include for-desktop-up {
       z-index: 0;
-
       position: absolute;
       height: 588px;
-      right: -532px;
+      right: -534px;
     }
     .slider {
       display: flex;
@@ -162,6 +161,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.5s;
     @include for-phone {
       margin-top: -15px;
       margin-bottom: 38px;
@@ -299,6 +299,8 @@
         @include for-desktop-up {
           text-align: left;
           width: 380px;
+          line-height: 1.65;
+
           margin-bottom: 20px;
         }
       }
@@ -331,24 +333,31 @@
   background-color: black;
   cursor: pointer;
 }
-
-.btn {
+.activeBtn {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   border: solid 1px #dae1e8;
-  background-color: transparent;
-  cursor: pointer;
-}
-.btn:disabled {
   background-color: #f0f1f2;
+  transition: all 0.5s;
+  cursor: pointer;
+  .img {
+    transition: all 0.5s;
+    opacity: 1;
+  }
 }
-
-.imgDisabled {
-  opacity: 0.25;
-}
-.img {
-  opacity: 1;
+.btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: solid 1px #f0f1f2;
+  background-color: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+  .img {
+    transition: all 0.5s;
+    opacity: 0.25;
+  }
 }
 
 .descriptions {
@@ -365,7 +374,7 @@
   }
   @include for-desktop {
     flex-direction: column-reverse;
-    padding: 120px 0 0 70px;
+    padding: 116px 0 0 70px;
   }
   @include for-desktop-up {
     flex-direction: column-reverse;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './NewSliderSection.module.scss';
 
 import { ReactComponent as Left } from '../../../ui/carousel/left.svg';
@@ -11,14 +11,26 @@ const NewSliderSection = () => {
   let sliderArr = [Orders, OperationalCosts, Analytics];
 
   const [x, setX] = useState(0);
+  const [activeLeft, setActiveLeft] = useState(false);
+  const [activeRight, setActiveRight] = useState(true);
+  const [active, setActive] = useState(false);
+
   const prev = () => {
     x === 0 ? setX(-100 * (sliderArr.length - 1)) : setX(x + 100);
+    activeLeft ? setActiveRight(false) : setActiveRight(true);
+    setActive(false);
   };
 
   const next = () => {
     x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100);
+    activeRight ? setActiveLeft(false) : setActiveRight(true);
+    setActive(true);
+    console.log('activeRight', activeRight);
   };
-
+  useEffect(() => {
+    activeLeft ? setActiveRight(false) : setActiveRight(true);
+    activeRight ? setActiveLeft(false) : setActiveRight(true);
+  }, [activeLeft, activeRight]);
   return (
     <section className={styles.sectionContainer}>
       <div className={styles.content}>
@@ -55,7 +67,10 @@ const NewSliderSection = () => {
         <div className={styles.descriptions}>
           <ul className={styles.btnWrapper}>
             <li>
-              <button className={styles.btn} onClick={prev}>
+              <button
+                className={!active ? styles.activeBtn : styles.btn}
+                onClick={prev}
+              >
                 <Left className={styles.img} />
               </button>
             </li>
@@ -100,7 +115,10 @@ const NewSliderSection = () => {
               </ul>
             </li>
             <li>
-              <button className={styles.btn} onClick={next}>
+              <button
+                className={active ? styles.activeBtn : styles.btn}
+                onClick={next}
+              >
                 <Right className={styles.img} />
               </button>
             </li>

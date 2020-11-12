@@ -48,13 +48,17 @@
 }
 .navigationList li:nth-child(2) {
   margin-left: 2px;
+  letter-spacing: -0.3px;
 }
 .navigationList li:nth-child(3) {
-  margin-left: -5px;
+  margin-left: -4px;
   letter-spacing: -0.4px;
 }
 .navigationList li:nth-child(4) {
-  letter-spacing: -0.5px;
+  letter-spacing: -0.6px;
+  @include for-desktop-up {
+    margin-left: 1px;
+  }
 }
 
 .btn {

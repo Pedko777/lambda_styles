@@ -93,7 +93,7 @@
             margin-top: 70px;
           }
           @include for-desktop-up {
-            max-width: 620px;
+            max-width: 626px;
             min-height: 320px;
             margin-left: -44px;
             margin-top: 22px;
@@ -226,7 +226,7 @@
               margin-bottom: 34px;
             }
             @include for-desktop-up {
-              line-height: 1.7;
+              line-height: 1.8;
               margin-bottom: 34px;
             }
           }
@@ -269,6 +269,7 @@
           }
           @include for-desktop-up {
             text-align-last: left;
+            // line-height: 1.7;
             margin-bottom: 10px;
           }
         }

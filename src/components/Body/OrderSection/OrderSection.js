@@ -26,10 +26,23 @@ const OrderSection = () => {
               )
             }
           </Media>
-          <p className={styles.descriprionText}>
-            Increase your sales by 30% with a better checkout experience. Your
-            customers can place orders easily with a few taps on the item list
-          </p>
+          <Media queries={{ large: { minWidth: 1280 } }}>
+            {matches =>
+              matches.large ? (
+                <p className={styles.descriprionText}>
+                  Increase your sales by 30% with a better checkout experience.
+                  Your customers can place orders <br /> easily with a few taps
+                  on the item list
+                </p>
+              ) : (
+                <p className={styles.descriprionText}>
+                  Increase your sales by 30% with a better checkout experience.
+                  Your customers can place orders easily with a few taps on the
+                  item list
+                </p>
+              )
+            }
+          </Media>
         </div>
         <ul className={styles.list}>
           <li className={styles.listItem}>
