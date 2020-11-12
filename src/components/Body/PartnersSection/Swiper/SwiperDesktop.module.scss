@@ -4,7 +4,7 @@
   align-items: center;
 
   @include for-tablet {
-    margin: 1px 0 0 14px;
+    margin: 2px 0 0 18px;
     width: 94px;
     height: 70px;
   }
@@ -20,7 +20,7 @@
 }
 .imgWrpCheken {
   @include for-tablet {
-    margin: -7px 0 0 20px;
+    margin: -12px 0 0 20px;
     width: 104px;
     height: 77px;
   }
@@ -59,7 +59,7 @@
     height: 70px;
   }
   @include for-tablet {
-    margin: 0px 0 0 26px;
+    margin: 0px 0 0 30px;
     width: 104px;
     height: 70px;
   }
@@ -78,7 +78,7 @@
   position: relative;
   object-fit: contain;
   @include for-tablet {
-    margin: -16px 0 0 19px;
+    margin: -16px 0 0 20px;
     width: 134px;
     height: 77px;
   }

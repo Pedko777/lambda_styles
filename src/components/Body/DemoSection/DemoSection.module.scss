@@ -36,9 +36,9 @@
   object-fit: contain;
   @include for-phone {
     width: 751px;
-    height: 435px;
+    height: 433px;
     margin-top: -72px;
-    left: -14px;
+    left: -16px;
   }
   @include for-tablet {
     width: 750px;

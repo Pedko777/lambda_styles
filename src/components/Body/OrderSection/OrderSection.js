@@ -36,7 +36,7 @@ const OrderSection = () => {
             <img src={screen1} alt={screen3.name} className={styles.img} />
             <div className={styles.listItemDescWrp}>
               <p className={styles.listItemDesc}>Select Items</p>
-              <Arrow className={styles.listItemDescImg} />
+              <Ok />
             </div>
           </li>
           <li className={styles.listItem}>
@@ -50,7 +50,8 @@ const OrderSection = () => {
             <img src={screen3} alt={screen1.name} className={styles.img} />
             <div className={styles.listItemDescWrp}>
               <p className={styles.listItemDesc}>Send Order</p>
-              <Ok />
+
+              <Arrow className={styles.listItemDescImg} />
             </div>
           </li>
         </ul>

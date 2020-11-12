@@ -3,10 +3,11 @@
 
 .stepSection {
   background-color: $bg-color;
+  // background-color: red;
   position: relative;
   z-index: 2;
   @include for-phone {
-    padding: 68px 0 101px;
+    padding: 76px 0 81px;
   }
   @include for-tablet {
     padding: 87px 0 80px;
@@ -157,7 +158,23 @@
       }
     }
   }
-
+  .stepListItem:nth-of-type(3) {
+    @include for-phone {
+      .stepListItemTitle {
+        margin: 1px 0 0 -6px;
+        letter-spacing: -0.2px;
+      }
+      .stepListItemDesc {
+        margin-top: -1px;
+        letter-spacing: -0.1px;
+        margin-left: 14px;
+      }
+      .img {
+        margin-top: 1px;
+        margin-left: -5px;
+      }
+    }
+  }
   .stepListItem:nth-of-type(1)::after {
     content: '';
     position: absolute;

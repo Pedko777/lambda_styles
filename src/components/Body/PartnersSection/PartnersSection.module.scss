@@ -1,9 +1,8 @@
 @import 'variables.scss';
 @import 'mixin.scss';
 .partnersSection {
-  padding: 5px 0 100px;
   @include for-phone {
-    padding: 8px 14px 60px 12px;
+    padding: 10px 14px 60px 12px;
   }
   @include for-tablet {
     padding: 4px 0 97px;
@@ -22,7 +21,7 @@
     line-height: 1.1;
     color: $primary-text-color;
     letter-spacing: 0.5px;
-    margin-bottom: 45px;
+
     @include for-phone {
       font-size: 28px;
       font-stretch: normal;
@@ -64,6 +63,9 @@
 }
 .titleWrapper {
   margin: 0 auto;
+  @include for-phone {
+    margin-bottom: 50px;
+  }
 }
 
 .swiperWrapper {

@@ -4,6 +4,7 @@
 .comunicationSection {
   position: relative;
   background-color: $bg-color;
+  background-color: red;
   z-index: 1;
   @include for-phone {
     padding: 58px 11px 61px;

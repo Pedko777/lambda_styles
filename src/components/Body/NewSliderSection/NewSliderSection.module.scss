@@ -43,12 +43,14 @@
     width: 100%;
     height: 100%;
     border: solid 1px #fcede8;
+    border: solid 1px #7c1f00;
     border-radius: 53px;
     background-color: #fcede8;
+    background-color: #5c1700;
 
     @include for-phone {
       border-radius: 53px 0 0 53px;
-      height: 392px;
+      height: 394px;
       width: 100%;
       margin-bottom: 57px;
     }
@@ -88,7 +90,7 @@
         transition: 0.5s;
         overflow: hidden;
         @include for-phone {
-          height: 588px;
+          height: 590px;
         }
         @include for-tablet {
           height: 588px;
@@ -96,9 +98,9 @@
         .slideImg {
           @include for-phone {
             position: absolute;
-            top: 140px;
-            left: 18px;
-            height: 330px;
+            top: 142px;
+            left: 15px;
+            height: 328px;
             object-fit: contain;
           }
           @include for-tablet {
@@ -109,7 +111,6 @@
             object-fit: contain;
           }
           @include for-desktop {
-            // position: absolute;
             margin-top: 50px;
             margin-left: -15px;
             width: 1055px;
@@ -126,9 +127,9 @@
           z-index: 0;
           @include for-phone {
             position: absolute;
-            top: 130px;
+            top: 133px;
             left: 50px;
-            height: 330px;
+            height: 326px;
             object-fit: contain;
           }
           @include for-tablet {
@@ -163,7 +164,7 @@
     justify-content: space-between;
     @include for-phone {
       margin-top: -15px;
-      margin-bottom: 40px;
+      margin-bottom: 38px;
       min-width: 186px;
     }
     @include for-tablet {
@@ -187,7 +188,7 @@
 .textCarousel {
   width: 100%;
   @include for-phone {
-    padding: 0 35px;
+    padding: 0 40px;
   }
   @include for-tablet {
     width: 65%;
@@ -230,10 +231,11 @@
           font-stretch: normal;
           font-style: normal;
           line-height: normal;
-          line-height: 1.35;
+          line-height: 1.4;
           letter-spacing: normal;
           letter-spacing: -0.4px;
           text-align: center;
+          margin-bottom: 16px;
         }
         @include for-tablet {
           text-align: left;
@@ -273,7 +275,8 @@
         color: $secondary-text-color;
         @include for-phone {
           line-height: 1.7;
-          letter-spacing: 0.4px;
+          // width: 280px;
+          letter-spacing: 0.2px;
         }
         @include for-tablet {
           font-family: 'Manrope Regular';

@@ -6,7 +6,7 @@
   position: relative;
   z-index: 1;
   @include for-phone {
-    padding: 58px 0 5px;
+    padding: 62px 0 0px;
   }
   @include for-tablet {
     padding: 96px 0 0;
@@ -67,7 +67,7 @@
       line-height: 1.4;
       letter-spacing: -0.3px;
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 21px;
     }
     @include for-tablet {
       margin-bottom: 24px;
@@ -138,7 +138,15 @@
     }
   }
 }
+.list li:nth-of-type(1) {
+  @include for-phone {
+    margin-left: 3px;
+  }
+}
 .list li:nth-of-type(2) {
+  @include for-phone {
+    margin-left: 3px;
+  }
   @include for-tablet {
     margin-left: 5px;
   }
@@ -157,8 +165,8 @@
   background-color: #fff;
   box-shadow: 0 -40px 5px 27px hsla(0, 0%, 100%, 0.5);
   @include for-phone {
-    padding-bottom: 52px;
-    flex-direction: column;
+    padding-bottom: 50px;
+    flex-direction: column-reverse;
     background-color: transparent;
   }
   @include for-tablet {
@@ -214,10 +222,10 @@
       position: absolute;
       z-index: 1;
       @include for-phone {
-        top: 32px;
-        right: 45px;
+        top: 34px;
+        right: 43px;
         width: 249px;
-        height: 402px;
+        height: 398px;
       }
       @include for-tablet {
         top: 50px;
