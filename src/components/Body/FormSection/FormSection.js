@@ -17,7 +17,7 @@ const FormSection = () => {
   return (
     <section className={styles.formSection}>
       <div className={styles.bgOval}></div>
-      <div>
+      <div className={styles.contentWrapp}>
         <div className={styles.content}>
           <div className={styles.formTop}>
             <p className={styles.sectionText}>let’s do this</p>

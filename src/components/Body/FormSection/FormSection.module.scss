@@ -65,7 +65,13 @@
     background: url(../../../ui/form/ovalBg.png) no-repeat left -113px bottom -49px/719px;
   }
 }
-
+.contentWrapp {
+  @include for-desktop-up {
+    max-width: 1135px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
 .content {
   display: flex;
   position: relative;
