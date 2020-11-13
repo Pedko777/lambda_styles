@@ -3,7 +3,6 @@
 
 .stepSection {
   background-color: $bg-color;
-  background-color: red;
   position: relative;
   z-index: 2;
   @include for-phone {

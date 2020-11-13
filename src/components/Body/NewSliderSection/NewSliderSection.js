@@ -11,26 +11,21 @@ const NewSliderSection = () => {
   let sliderArr = [Orders, OperationalCosts, Analytics];
 
   const [x, setX] = useState(0);
-  const [activeLeft, setActiveLeft] = useState(false);
-  const [activeRight, setActiveRight] = useState(true);
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
 
   const prev = () => {
     x === 0 ? setX(-100 * (sliderArr.length - 1)) : setX(x + 100);
-    activeLeft ? setActiveRight(false) : setActiveRight(true);
     setActive(false);
   };
 
   const next = () => {
     x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100);
-    activeRight ? setActiveLeft(false) : setActiveRight(true);
     setActive(true);
-    console.log('activeRight', activeRight);
   };
-  useEffect(() => {
-    activeLeft ? setActiveRight(false) : setActiveRight(true);
-    activeRight ? setActiveLeft(false) : setActiveRight(true);
-  }, [activeLeft, activeRight]);
+  // useEffect(() => {
+  //   activeLeft ? setActiveRight(false) : setActiveRight(true);
+  //   activeRight ? setActiveLeft(false) : setActiveRight(true);
+  // }, [activeLeft, activeRight]);
   return (
     <section className={styles.sectionContainer}>
       <div className={styles.content}>

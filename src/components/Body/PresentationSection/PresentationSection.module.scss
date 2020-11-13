@@ -3,7 +3,6 @@
 
 .sectionWrapper {
   background-color: $bg-color;
-  background-color: red;
 
   @include for-phone {
     padding: 50px 0 57px;
@@ -22,7 +21,9 @@
   .contentWrapper {
     margin: 0 auto;
     max-width: 1135px;
-
+    @include for-phone {
+      padding: 0 24px;
+    }
     @include for-tablet {
       padding: 0 24px;
     }
@@ -42,9 +43,6 @@
       @include for-phone {
         align-items: baseline;
         height: auto;
-        @include for-phone {
-          padding: 0 24px;
-        }
       }
       @include for-tablet {
         height: auto;
@@ -59,8 +57,9 @@
         margin-right: 98px;
         @include for-phone {
           order: 2;
-          width: 343px;
-          height: 206px;
+
+          max-width: 95vw;
+          max-height: 40vh;
           align-self: center;
           margin: 0;
           margin-bottom: 55px;
@@ -101,7 +100,10 @@
         }
         .animationWrapper {
           transition: 0.4s;
-          width: 100%;
+
+          @include for-phone {
+            max-width: 75%;
+          }
           @include for-tablet {
             max-width: 370px;
           }
@@ -153,9 +155,18 @@
           }
         }
         .line {
+          @include for-phone {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+          }
           .contentButtons {
             @include for-phone {
               margin-bottom: 70px;
+              display: flex;
+              justify-content: space-between;
+
+              width: 280px;
             }
             @include for-tablet {
               margin-bottom: 63px;
@@ -201,6 +212,8 @@
             }
             button:first-of-type {
               @include for-phone {
+                margin: 0;
+                // justify-content: space-between;
               }
               margin-right: 24px;
             }
@@ -214,6 +227,7 @@
             letter-spacing: normal;
             text-align: left;
             @include for-phone {
+              width: 100%;
               text-align: center;
               margin: -18px 0 48px -2px;
             }

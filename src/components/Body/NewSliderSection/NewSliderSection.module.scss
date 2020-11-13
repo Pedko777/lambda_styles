@@ -40,13 +40,11 @@
     }
   }
   .carousel {
-    width: 100%;
+    width: 300%;
     height: 100%;
     border: solid 1px #fcede8;
-    border: solid 1px #7c1f00;
     border-radius: 53px;
     background-color: #fcede8;
-    background-color: #5c1700;
 
     @include for-phone {
       border-radius: 53px 0 0 53px;
