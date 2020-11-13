@@ -100,9 +100,8 @@
         }
         .animationWrapper {
           transition: 0.4s;
-
+          width: 100%;
           @include for-phone {
-            max-width: 75%;
           }
           @include for-tablet {
             max-width: 370px;
