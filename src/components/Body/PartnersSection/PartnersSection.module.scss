@@ -12,6 +12,10 @@
   }
   @include for-desktop-up {
     padding: 4px 0 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .sectionTitle {
     font-family: 'Manrope Bold';

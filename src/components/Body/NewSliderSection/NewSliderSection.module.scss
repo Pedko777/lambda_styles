@@ -16,8 +16,16 @@
     height: 800px;
   }
   @include for-desktop-up {
+    // max-width: 1128px;
     padding: 11px 0 65px;
     height: 800px;
+  }
+
+  .contentWrap {
+    @include for-desktop-up {
+      max-width: 1128px;
+      margin: 0 auto;
+    }
   }
   .content {
     max-width: 1128px;
@@ -26,6 +34,7 @@
     flex-direction: column;
     position: relative;
     height: auto;
+    margin: 0;
     @include for-phone {
       align-items: center;
     }
@@ -37,6 +46,7 @@
     }
     @include for-desktop-up {
       justify-content: space-between;
+      max-width: 1128px;
     }
   }
   .carousel {
