@@ -8,16 +8,18 @@ import SwiperDesktop from './Swiper/SwiperDesktop';
 const PartnersSection = () => {
   return (
     <section className={styles.partnersSection}>
-      <div className={styles.titleWrapper}>
-        <h3 className={styles.sectionTitle}>
-          Trusted by 1000+ partners across APAC
-        </h3>
-      </div>
-      <div className={styles.swiper}>
-        <div className={styles.swiperWrapper}>
-          <Media queries={{ small: { maxWidth: 767 } }}>
-            {matches => (matches.small ? <SwiperPhone /> : <SwiperDesktop />)}
-          </Media>
+      <div className={styles.contentWrap}>
+        <div className={styles.titleWrapper}>
+          <h3 className={styles.sectionTitle}>
+            Trusted by 1000+ partners across APAC
+          </h3>
+        </div>
+        <div className={styles.swiper}>
+          <div className={styles.swiperWrapper}>
+            <Media queries={{ small: { maxWidth: 767 } }}>
+              {matches => (matches.small ? <SwiperPhone /> : <SwiperDesktop />)}
+            </Media>
+          </div>
         </div>
       </div>
     </section>
