@@ -15,7 +15,7 @@
   }
   @include for-tablet {
     background: url(../../../ui/header/Boxes.png) no-repeat left -255px top 124px/403px,
-      url(../../../ui/header/Fruits.png) no-repeat right -167px top 109px/330px;
+      url(../../../ui/header/Fruits.png) no-repeat right -165px top 111px/330px;
     background-color: $bg-color;
   }
   @include for-desktop {

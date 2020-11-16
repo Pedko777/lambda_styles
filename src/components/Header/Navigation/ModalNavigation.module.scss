@@ -2,6 +2,7 @@
 @import 'mixin.scss';
 
 .overlay {
+  z-index: 0;
   background-color: #fff;
   top: 0;
   bottom: 0;
@@ -18,6 +19,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-image: url(../../../ui/rootBg/modal.png);
+  background-size: 545px 700px;
+  background-position: right -120px bottom 0px;
+  background-repeat: no-repeat;
 }
 
 .modalDescription {

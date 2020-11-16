@@ -10,68 +10,53 @@ import { ReactComponent as Ok } from '../../../ui/order/ok.svg';
 const OrderSection = () => {
   return (
     <section className={styles.orderSection}>
-      <div className={`container sectionWrapper`}>
+      <div className={styles.container}>
         <div className={styles.orderHead}>
-          <Media queries={{ small: { maxWidth: 1023 } }}>
-            {matches =>
-              matches.small ? (
-                <h3 className={styles.sectionTitle}>
-                  Seamless Ordering Experience
-                </h3>
-              ) : (
-                <h3 className={styles.sectionTitle}>
-                  Seamless Ordering <br />
-                  Experience
-                </h3>
-              )
-            }
-          </Media>
-          <Media queries={{ large: { minWidth: 1280 } }}>
-            {matches =>
-              matches.large ? (
-                <p className={styles.descriprionText}>
-                  Increase your sales by 30% with a better checkout experience.
-                  Your customers can place orders <br /> easily with a few taps
-                  on the item list
-                </p>
-              ) : (
-                <p className={styles.descriprionText}>
-                  Increase your sales by 30% with a better checkout experience.
-                  Your customers can place orders easily with a few taps on the
-                  item list
-                </p>
-              )
-            }
-          </Media>
+          <div className={styles.orderHeadTitle}>
+            <h3 className={styles.sectionTitle}>
+              Seamless Ordering Experience
+            </h3>
+          </div>
+          <div className={styles.orderHeadDesc}>
+            <Media queries={{ large: { minWidth: 1280 } }}>
+              {matches =>
+                matches.large ? (
+                  <p className={styles.descriprionText}>
+                    Increase your sales by 30% with a better checkout
+                    experience. Your customers can place orders <br /> easily
+                    with a few taps on the item list
+                  </p>
+                ) : (
+                  <p className={styles.descriprionText}>
+                    Increase your sales by 30% with a better checkout
+                    experience. Your customers can place orders easily with a
+                    few taps on the item list
+                  </p>
+                )
+              }
+            </Media>
+          </div>
         </div>
-        <ul className={styles.list}>
-          <li className={styles.listItem}>
-            <img src={screen1} alt={screen3.name} className={styles.img} />
-            <div className={styles.listItemDescWrp}>
-              <p className={styles.listItemDesc}>Select Items</p>
-              <Ok />
-            </div>
-          </li>
-          <li className={styles.listItem}>
-            <img src={screen2} alt={screen2.name} className={styles.img} />
-            <div className={styles.listItemDescWrp}>
-              <p className={styles.listItemDesc}>Review Order</p>
+        <ul className={styles.orderList}>
+          <li className={styles.orderListItem}>
+            <img src={screen3} className={styles.orderListItemImg} />
+            <div className={styles.orderListItemTextWrap}>
+              <p className={styles.orderListItemText}>Send Order</p>
               <Arrow className={styles.listItemDescImg} />
             </div>
           </li>
-          <li className={styles.listItem}>
-            <img src={screen3} alt={screen1.name} className={styles.img} />
-            <div className={styles.listItemDescWrp}>
-              <p className={styles.listItemDesc}>Send Order</p>
-              <Media queries={{ small: { maxWidth: 767 } }}>
-                {matches =>
-                  matches.small ? (
-                    <Arrow className={styles.listItemDescImg} />
-                  ) : (
-                    <Ok />
-                  )
-                }
-              </Media>
+          <li className={styles.orderListItem}>
+            <img src={screen2} className={styles.orderListItemImg} />
+            <div className={styles.orderListItemTextWrap}>
+              <p className={styles.orderListItemText}>Review Order</p>
+              <Arrow className={styles.listItemDescImg} />
+            </div>
+          </li>
+          <li className={styles.orderListItem}>
+            <img src={screen1} className={styles.orderListItemImg} />
+            <div className={styles.orderListItemTextWrap}>
+              <p className={styles.orderListItemText}>Select Items</p>
+              <Ok />
             </div>
           </li>
         </ul>

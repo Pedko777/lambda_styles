@@ -51,7 +51,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 2;
   @include for-phone {
     display: none;
   }
@@ -356,11 +356,11 @@
     }
     .formBg {
       position: absolute;
-      z-index: 1;
+      z-index: 3;
       @include for-phone {
         width: 110%;
         height: 110%;
-        top: -5%;
+        top: 0;
         left: -5%;
         background: url(../../../ui/form/bgForm1.png) no-repeat right top 15px/98px
             182px,

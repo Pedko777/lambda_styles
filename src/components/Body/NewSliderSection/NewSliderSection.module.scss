@@ -16,7 +16,6 @@
     height: 800px;
   }
   @include for-desktop-up {
-    // max-width: 1280px;
     padding: 11px 0 65px;
     height: 800px;
   }
@@ -50,6 +49,7 @@
     }
   }
   .carousel {
+    z-index: 22;
     width: 100%;
     height: 100%;
     border: solid 1px #fcede8;
@@ -69,7 +69,6 @@
       margin-bottom: 60px;
     }
     @include for-desktop {
-      z-index: 0;
       border-radius: 53px 0 0 53px;
       position: absolute;
       height: 588px;
@@ -82,6 +81,7 @@
       left: 41%;
     }
     .slider {
+      z-index: 1;
       display: flex;
       align-items: center;
       box-sizing: border-box;
@@ -103,6 +103,7 @@
           height: 588px;
         }
         .slideImg {
+          z-index: 0;
           @include for-phone {
             position: absolute;
             top: 142px;
@@ -166,6 +167,7 @@
     }
   }
   .btnWrapper {
+    z-index: 22;
     display: flex;
     align-items: center;
     justify-content: space-between;

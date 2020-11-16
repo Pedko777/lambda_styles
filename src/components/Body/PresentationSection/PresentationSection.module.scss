@@ -2,8 +2,8 @@
 @import 'variables.scss';
 
 .sectionWrapper {
+  z-index: 22;
   background-color: $bg-color;
-
   @include for-phone {
     padding: 50px 0 57px;
   }
@@ -17,10 +17,10 @@
     padding: 88px 0 54px;
   }
   position: relative;
-  z-index: 0;
+
   .contentWrapper {
     margin: 0 auto;
-    max-width: 1135px;
+    max-width: 1128px;
     @include for-phone {
       padding: 0 24px;
     }
