@@ -125,13 +125,13 @@ const FormSection = () => {
               <div className={styles.inputWrapperPhone}>
                 <input
                   name="code"
-                  type="number"
+                  type="tel"
                   placeholder="+65"
                   className={styles.contactFormInputCode}
                 />
                 <input
                   name="phone"
-                  type="number"
+                  type="tel"
                   className={styles.contactFormInputPhone}
                 />
               </div>

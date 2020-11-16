@@ -6,7 +6,6 @@ import Header from './Header/Header';
 import DemoSection from './Body/DemoSection/DemoSection';
 import PartnersSection from './Body/PartnersSection/PartnersSection';
 import FirstSection from './Body/FirstSection/FirstSection';
-// import ComunicationSection from './Body/ComunicationSection/ComunicationSection';
 import OrderSection from './Body/OrderSection/OrderSection';
 import StepSection from './Body/StepSection/StepSection';
 import FormSection from './Body/FormSection/FormSection';

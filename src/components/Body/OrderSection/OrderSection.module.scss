@@ -112,9 +112,10 @@
       font-stretch: normal;
       font-style: normal;
       line-height: 1.7;
-      letter-spacing: normal;
+
       text-align: center;
-      margin: 0 -75px 30px -75px;
+
+      letter-spacing: 0.2px;
     }
     @include for-tablet {
       margin: 0 auto;

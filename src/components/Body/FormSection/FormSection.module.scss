@@ -505,7 +505,9 @@
           flex-wrap: wrap;
           justify-content: center;
         }
-
+        .contactFormInput:focus {
+          border: 2px solid rgb(77, 171, 248);
+        }
         .contactFormInput {
           font-size: 14px;
           line-height: 1.36;
@@ -560,7 +562,9 @@
     margin-bottom: 44px;
     margin-left: -2px;
   }
-
+  .contactFormInputPhone:focus {
+    border: 2px solid rgb(77, 171, 248);
+  }
   .contactFormInputPhone {
     width: 231px;
     position: relative;
@@ -577,6 +581,9 @@
     @include for-phone {
       width: 62%;
     }
+  }
+  .contactFormInputCode:focus {
+    border: 2px solid rgb(77, 171, 248);
   }
   .contactFormInputCode {
     width: 96px;
@@ -612,12 +619,15 @@
   }
 }
 .btn:hover {
-  background-image: linear-gradient(104deg, #ffc547, #faf743);
+  background-image: linear-gradient(
+    135deg,
+    rgb(252, 58, 65) 0%,
+    rgb(238, 38, 55) 100%
+  );
 }
 .btn {
   border-radius: 8px;
   border: none;
-  // padding-right: 20px;
   background-image: linear-gradient(104deg, #ff474d, #fa4353);
   text-align: right;
   color: $btn-text-color;
@@ -629,7 +639,6 @@
   width: 172px;
   height: 52px;
   outline: none;
-  padding: 0 2px 5px 11px;
   text-align: center;
   @include for-phone {
     width: 252px;

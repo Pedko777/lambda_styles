@@ -1,0 +1,97 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.overlay {
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.modalWindow {
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.modalDescription {
+  font-size: 14px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+.navigationList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+.navigationList li:not(:last-of-type) {
+  margin-bottom: 60px;
+}
+
+.navLink {
+  font-family: 'Manrope Regular';
+  border: none;
+  text-decoration: none;
+  color: $primary-text-color;
+  line-height: normal;
+  transition: 0.4s;
+  font-weight: 400;
+}
+
+.navLink:hover,
+.navLink:focus {
+  color: $navigation-btn-active;
+  cursor: pointer;
+}
+
+.sectionBtn {
+  bottom: 0;
+  padding: 15px 30px;
+  display: block;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  z-index: 10;
+  box-shadow: rgba(94, 22, 22, 0.47) 0px 14px 30px -8px;
+  background-image: linear-gradient(
+    135deg,
+    rgb(255, 71, 77) 0%,
+    rgb(250, 67, 83) 100%
+  );
+  color: $btn-text-color;
+  transition: 0.4s;
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+
+.sectionBtn:hover {
+  background-image: linear-gradient(
+    135deg,
+    rgb(252, 58, 65) 0%,
+    rgb(238, 38, 55) 100%
+  );
+}
