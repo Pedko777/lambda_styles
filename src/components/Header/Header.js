@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <>
       <div className={styles.header}>
-        <div className={`${styles.headerWrp}`}>
+        <div className={` container ${styles.headerWrp}`}>
           <nav className={styles.navBar}>
             <div className={styles.logoBox} href="#">
               <a className={styles.logoLink} href="#">

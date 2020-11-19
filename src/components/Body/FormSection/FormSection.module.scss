@@ -2,690 +2,681 @@
 @import 'variables.scss';
 
 .formSection {
-  position: relative;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#fafafa)
+  );
+  background-image: -o-linear-gradient(#fff, #fafafa);
   background-image: linear-gradient(#fff, #fafafa);
+  .bgOval {
+    max-width: 1510px;
+    margin: 0px auto;
+    background-image: url(../../../ui/form/ovalBg.png);
+    background-repeat: no-repeat;
+    background-size: 719px;
+    @include for-phone {
+      background-image: none;
+    }
+    @include for-tablet {
+      background-position: left -130px bottom 400px;
+    }
+    @include for-desktop {
+      background-position: left -115px bottom 30px;
+    }
 
-  @include for-phone {
-    padding: 71px 0 85px;
-  }
-  @include for-tablet {
-    padding: 110px 0 81px;
-  }
-  @include for-desktop {
-    padding: 250px 40px 116px 42px;
-  }
-  @include for-desktop-up {
-    padding: 228px 0 39px;
-    box-shadow: -40px 0 5px 27px hsla(0, 0%, 100%, 0.5);
+    @include bg-desktop {
+      background-position: left -115px bottom 20px;
+    }
+    @include bg-desktop-up {
+      background-position: left 0px bottom 20px;
+    }
+    .contentWrapp {
+      padding: 200px 20px 0 20px;
+      padding-bottom: 80px;
+      position: relative;
+      max-width: 1128px;
+      margin: 0 auto;
+
+      @include for-phone {
+        padding: 70px 24px 0 24px;
+      }
+      @include for-tablet {
+        padding: 109px 24px 0 44px;
+      }
+      @include for-desktop {
+        padding: 248px 44px 118px 44px;
+      }
+      @include for-desktop-up {
+        padding: 220px 0 118px 0;
+      }
+      .content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        position: relative;
+        z-index: 2;
+        @include for-phone {
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+        }
+        @include for-tablet {
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+        }
+        @include for-desktop {
+          height: 550px;
+        }
+        @include for-desktop-up {
+          height: 550px;
+        }
+        .formTop {
+          width: 494px;
+          margin-bottom: 130px;
+          @include for-phone {
+            width: 100%;
+            margin-bottom: 129px;
+          }
+          @include for-tablet {
+            margin-bottom: 150px;
+            margin-left: 7px;
+          }
+          @include for-desktop {
+            margin-bottom: 130px;
+            width: 494px;
+            padding-right: 34px;
+          }
+          @include for-desktop-up {
+            margin-top: 6px;
+          }
+          .formTopFirstTitleWrp {
+            margin-bottom: 20px;
+            .sectionText {
+              margin: 0;
+              font-size: 13px;
+              line-height: 1.1;
+              font-weight: 700;
+              color: #f43939;
+              text-transform: uppercase;
+              letter-spacing: 0.8px;
+              text-align: center;
+              @include for-desktop {
+                text-align: left;
+              }
+              @include for-desktop-up {
+                text-align: left;
+              }
+            }
+          }
+          .sectionTitle {
+            margin: 0;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 56px;
+            color: $primary-text-color;
+            text-align: center;
+            letter-spacing: 0.5px;
+            @include for-phone {
+              font-size: 28px;
+              line-height: 39px;
+              letter-spacing: 0.5px;
+            }
+            @include for-tablet {
+              letter-spacing: 0.7px;
+              font-size: 32px;
+              line-height: 44px;
+            }
+            @include for-desktop {
+              text-align: left;
+              letter-spacing: 0.8px;
+            }
+            @include for-desktop-up {
+              text-align: left;
+              letter-spacing: 0.8px;
+            }
+          }
+        }
+        .meetUs {
+          position: relative;
+          width: 288px;
+          @include for-phone {
+            margin-bottom: 86px;
+            -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+            order: 3;
+          }
+          @include for-tablet {
+            margin-bottom: 84px;
+            margin-left: 7px;
+            -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+            order: 3;
+          }
+          .arrowBox {
+            position: absolute;
+            top: -44px;
+            left: 60px;
+            @include for-phone {
+              left: 11px;
+              transform: none;
+            }
+            @include for-tablet {
+              top: -44px;
+              left: 75px;
+            }
+            @include for-desktop {
+              left: -20px;
+            }
+            .imgArrow {
+              position: absolute;
+              left: auto;
+              right: -30px;
+              top: -23px;
+              width: 104px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              pointer-events: none;
+            }
+            .arrowBoxText {
+              font-family: 'Hand Of Sean';
+              font-size: 16px;
+              line-height: 1.1;
+              font-weight: 400;
+              color: $primary-text-color;
+              letter-spacing: 1px;
+            }
+          }
+          .countryList {
+            position: relative;
+            width: 100%;
+            list-style: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            height: 150px;
+            padding: 20px 24px 14px 24px;
+            -webkit-box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            border-radius: 8px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+            .countryListItem {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-pack: start;
+              -ms-flex-pack: start;
+              justify-content: flex-start;
+              width: 42%;
+
+              .countryListItemImg {
+                display: inline;
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+              }
+              .countryListItemName {
+                font-size: 14px;
+                line-height: 1.25;
+                font-weight: 500;
+                color: $primary-text-color;
+                margin-left: 9px;
+                letter-spacing: 0.2px;
+                @include for-tablet {
+                  letter-spacing: 0.2px;
+                }
+              }
+            }
+          }
+          .countryList::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            z-index: -1;
+            right: -14px;
+            bottom: -83px;
+            width: 130px;
+            height: 210px;
+            background: url(../../../ui/form/bgCountry.png) no-repeat 100% 0/111px
+              181px;
+            transform: rotate(90deg) scaleY(-1);
+            @include for-desktop {
+              display: none;
+            }
+            @include for-desktop-up {
+              display: none;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
-.formSection::before {
-  @include for-phone {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 35%;
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    top: 0;
-    background-color: #fff;
-  }
-  @include for-tablet {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 0%;
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    top: 0;
-    background-color: none;
-  }
-}
-
-.bgOval {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  @include for-phone {
-    display: none;
-  }
-  @include for-tablet {
-    background: url(../../../ui/form/ovalBg.png) no-repeat left -132px bottom 405px/719px;
-  }
-  @include for-desktop {
-    background: url(../../../ui/form/ovalBg.png) no-repeat left -113px bottom 30px/719px;
-  }
-  @include for-desktop-up {
-    background: url(../../../ui/form/ovalBg.png) no-repeat left -113px bottom -49px/719px;
-  }
-}
-.contentWrapp {
-  @include for-desktop-up {
-    max-width: 1135px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
-.content {
+//** FORM **//
+.formWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
-  z-index: 2;
-  flex-flow: column wrap;
-
+  max-width: 447px;
+  height: 496px;
   @include for-phone {
-    height: auto;
-    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 494px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-bottom: 128px;
   }
   @include for-tablet {
-    height: auto;
-    align-items: center;
+    margin-right: 20px;
+    height: 486px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-bottom: 88px;
   }
   @include for-desktop {
-    align-items: center;
-    height: 550px;
+    margin-top: 110px;
+    margin-left: 35px;
   }
   @include for-desktop-up {
-    height: 550px;
+    margin-left: 40px;
   }
-
-  //* header and descriptions *//
-
-  .formTop {
-    text-align: center;
-    font-family: 'Manrope Bold';
+  .formBg {
+    position: absolute;
+    z-index: 3;
     @include for-phone {
-      text-align: center;
-      width: 100%;
-      order: 1;
-      position: relative;
-      left: 0;
+      width: 110%;
+      height: 110%;
+      top: 0;
+      left: -5%;
+      background: url(../../../ui/form/bgForm1.png) no-repeat right top 15px/98px
+          182px,
+        url(../../../ui/form/bgForm2.png) no-repeat left 8px bottom 30px/98px
+          182px;
     }
     @include for-tablet {
-      text-align: center;
-      width: 100%;
-      order: 1;
-      position: relative;
-      left: 15px;
+      width: 110%;
+      height: 110%;
+      top: 9%;
+      left: 5%;
+      background: url(../../../ui/form/bgForm1.png) no-repeat right top 15px/98px
+          182px,
+        url(../../../ui/form/bgForm2.png) no-repeat left 62% bottom 33px/98px
+          182px;
     }
     @include for-desktop {
-      width: 494px;
+      width: 120%;
+      height: 120%;
+      top: -15%;
+      left: -1%;
+      background: url(../../../ui/form/bgForm1.png) no-repeat right 40px top 5px/100px
+        182px;
     }
     @include for-desktop-up {
-      width: 494px;
+      width: 105%;
+      height: 100%;
+      background: url(../../../ui/form/bgForm1.png) no-repeat right -10px top 40px/98px
+          182px,
+        url(../../../ui/form/bgForm2.png) no-repeat left 57% bottom/98px 182px;
     }
   }
-  .sectionText {
-    font-size: 13px;
-    line-height: 1.1;
-    font-weight: 700;
-    color: #f43939;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    @include for-phone {
-      letter-spacing: 1px;
-      margin-left: 2px;
-    }
-    @include for-desktop {
-      text-align: left;
-      letter-spacing: 0.8px;
-      margin-left: -5px;
-    }
-    @include for-desktop-up {
-      text-align: left;
-      letter-spacing: 0.8px;
-    }
-  }
-  .sectionTitle {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.1;
-    color: $primary-text-color;
-    margin: 0 auto;
-    text-align: center;
-    letter-spacing: 0.7px;
-    @include for-phone {
-      font-size: 28px;
-      width: 93%;
-      letter-spacing: -0.3px;
-      padding: 19px 0 132px;
-      line-height: 1.4;
-    }
-    @include for-tablet {
-      padding: 19px 0 158px;
-      width: 66%;
-      letter-spacing: -0.5px;
-      line-height: 45px;
-    }
-    @include for-desktop {
-      padding: 18px 0 113px;
-      text-align: left;
-      width: 80%;
-      margin: 0;
-      font-size: 40px;
-      font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.4;
-      letter-spacing: -0.3px;
-      margin-left: -5px;
-    }
-    @include for-desktop-up {
-      padding: 18px 0 91px;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      font-size: 40px;
-      font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.4;
-      letter-spacing: -0.5px;
-    }
-  }
-
-  //* Countries *//
-  .meetUs {
+  .contactForm {
+    width: 407px;
+    border-radius: 13px;
+    box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 32px;
     position: relative;
-    max-width: 288px;
+    z-index: 5;
     @include for-phone {
-      margin-top: 128px;
-      left: 0;
-      order: 3;
+      position: relative;
+      width: 100%;
+      padding: 32px 27px 5px 32px;
     }
     @include for-tablet {
-      order: 3;
-      margin-top: 72px;
-      left: 13px;
+      padding: 32px 32px 0 32px;
     }
     @include for-desktop {
-      align-self: start;
-      left: 2px;
+      padding: 32px 32px 24px 32px;
     }
-    @include for-desktop-up {
-      align-self: start;
-      top: 42px;
-      left: 2px;
-    }
-    //* countries arrow *//
+    //* Arrow form*//
     .arrowBox {
+      position: absolute;
+      left: auto;
+      right: 0;
       font-family: 'Hand Of Sean';
-      font-size: 16px;
+      font-size: 20px;
       line-height: 1.1;
       font-weight: 400;
       color: $primary-text-color;
-      position: relative;
       @include for-phone {
-        position: absolute;
-        left: 14px;
-        top: -47px;
-        letter-spacing: 1px;
+        top: -52px;
+        left: 88px;
+        margin-right: -30px;
       }
       @include for-tablet {
+        top: -60px;
+        left: 86px;
+      }
+      @include for-desktop {
+        top: -160px;
+        left: 73px;
+      }
+      @include for-desktop-up {
+        top: -58px;
         left: 72px;
-        top: -28px;
-        letter-spacing: 1px;
       }
-      @include for-desktop {
-        left: -19px;
-        top: -28px;
-        letter-spacing: 0.5px;
-      }
-      @include for-desktop-up {
-        left: -46px;
-        top: -25px;
-        letter-spacing: 0.5px;
-      }
-      .imgArrow {
-        width: 109px;
-        height: 64px;
-        object-fit: contain;
+      .arrowBoxImg {
         position: absolute;
-        @include for-phone {
-          top: -33px;
-          right: -27px;
-        }
-        @include for-tablet {
-          top: -33px;
-          right: 155px;
-        }
-        @include for-desktop {
-          right: 153px;
-          top: -30px;
-        }
-        @include for-desktop-up {
-          right: 157px;
-          top: -35px;
-        }
+        left: -42px;
+        right: auto;
+        top: -35px;
+        width: 117px;
+        height: 50px;
       }
-    }
-    .countryList {
-      position: relative;
-      width: 100%;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      height: 150px;
-      padding: 14px 24px;
-      box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
-      background-color: #fff;
-      border-radius: 8px;
-
-      .countryListItem {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        width: 40%;
-
-        .countryListItemImg {
-          display: inline;
-          width: 15px;
-          height: 15px;
-          vertical-align: middle;
-        }
-        .countryListItemName {
-          font-size: 14px;
-          line-height: 1.25;
-          font-weight: 500;
-          color: $primary-text-color;
-          margin-left: 9px;
-          letter-spacing: 0.2px;
-          @include for-tablet {
-            letter-spacing: 0.2px;
-          }
-        }
-      }
-    }
-    .countryList::after {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      z-index: -1;
-      right: -14px;
-      bottom: -83px;
-      width: 130px;
-      height: 210px;
-      background: url(../../../ui/form/bgCountry.png) no-repeat 100% 0/111px
-        181px;
-      transform: rotate(90deg) scaleY(-1);
-      @include for-desktop {
-        display: none;
-      }
-      @include for-desktop-up {
-        display: none;
-      }
-    }
-  }
-
-  //* Form *//
-  .formWrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    max-width: 447px;
-    height: 496px;
-    @include for-phone {
-      position: relative;
-      max-width: 100%;
-      height: 494px;
-      order: 2;
-      margin-top: -3px;
-      margin-left: -3px;
-    }
-    @include for-tablet {
-      height: 486px;
-      order: 2;
-      margin-top: -7px;
-      margin-left: -3px;
-    }
-    @include for-desktop {
-      margin-left: 13px;
-      margin-top: 110px;
-    }
-    @include for-desktop-up {
-      margin-left: 45px;
-      margin-top: -9px;
-    }
-    .formBg {
-      position: absolute;
-      z-index: 3;
-      @include for-phone {
-        width: 110%;
-        height: 110%;
-        top: 0;
-        left: -5%;
-        background: url(../../../ui/form/bgForm1.png) no-repeat right top 15px/98px
-            182px,
-          url(../../../ui/form/bgForm2.png) no-repeat left 8px bottom 30px/98px
-            182px;
-      }
-      @include for-tablet {
-        width: 110%;
-        height: 110%;
-        top: 9%;
-        left: 5%;
-        background: url(../../../ui/form/bgForm1.png) no-repeat right top 15px/98px
-            182px,
-          url(../../../ui/form/bgForm2.png) no-repeat left 62% bottom 33px/98px
-            182px;
-      }
-      @include for-desktop {
-        width: 120%;
-        height: 120%;
-        top: -15%;
-        left: -1%;
-        background: url(../../../ui/form/bgForm1.png) no-repeat right 40px top
-          5px/100px 182px;
-      }
-      @include for-desktop-up {
-        width: 105%;
-        height: 100%;
-        background: url(../../../ui/form/bgForm1.png) no-repeat right -10px top 40px/98px
-            182px,
-          url(../../../ui/form/bgForm2.png) no-repeat left 57% bottom/98px 182px;
-      }
-    }
-    .contactForm {
-      width: 407px;
-      height: 461px;
-      border-radius: 13px;
-      box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
-      background-color: #fff;
-      padding: 32px;
-      position: relative;
-      z-index: 5;
-      @include for-phone {
-        position: relative;
-        margin-left: 2px;
-        width: 87%;
-        height: 486px;
-        padding: 32px 27px 32px 32px;
-      }
-
-      //* Arrow form*//
-      .arrowBox {
-        position: absolute;
-        left: auto;
-        right: 0;
+      .arrowBoxImgText {
         font-family: 'Hand Of Sean';
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.1;
         font-weight: 400;
+        letter-spacing: -0.1px;
         color: $primary-text-color;
+        position: relative;
+        margin-left: 2px;
         @include for-phone {
-          top: -52px;
-          left: 88px;
-          margin-right: -30px;
-        }
-        @include for-tablet {
-          top: -63px;
-          left: 86px;
-        }
-        @include for-desktop {
-          top: -165px;
-          left: 73px;
-        }
-        @include for-desktop-up {
-          top: -60px;
-          left: 69px;
-        }
-        .arrowBoxImg {
-          position: absolute;
-          left: -42px;
-          right: auto;
-          top: -31px;
-          width: 117px;
-          height: 50px;
-        }
-        .arrowBoxImgText {
-          font-family: 'Hand Of Sean';
-          font-size: 18px;
-          line-height: 1.1;
-          font-weight: 400;
-          letter-spacing: -0.1px;
-          color: $primary-text-color;
-          position: relative;
-          margin-left: 2px;
-          @include for-phone {
-            letter-spacing: 0;
-          }
+          letter-spacing: 0;
         }
       }
-      .formTitleBox {
-        font-family: 'Manrope Bold';
+    }
+
+    .formTitleBox {
+      font-family: 'Manrope Bold';
+      text-align: center;
+      @include for-phone {
+        padding-bottom: 49px;
+      }
+      @include for-tablet {
+        text-align-last: left;
+        padding-bottom: 49px;
+      }
+      @include for-desktop {
+        text-align-last: left;
+        padding-bottom: 49px;
+      }
+      @include for-desktop-up {
+        text-align-last: left;
+        padding-bottom: 50px;
+      }
+      .formTitle {
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 24px;
+        letter-spacing: normal;
+        color: $primary-text-color;
+        text-align: center;
+        letter-spacing: -0.3px;
+        @include for-phone {
+          margin-left: -7px;
+        }
+        @include for-desktop-up {
+          // margin-bottom: -1px;
+        }
+      }
+    }
+    .inputWrapper {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 56px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 32px;
+      @include for-phone {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .contactFormInput:focus {
+        border: 2px solid rgb(77, 171, 248);
+      }
+      .contactFormInput {
+        width: 100%;
+        line-height: 1.5;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 1px solid rgba(144, 149, 153, 0.35);
+        padding: 15px 5px 17px 17px;
+        color: $secondary-text-color;
+        outline: none;
+      }
+    }
+    .inputWrapperPhone::after {
+      content: '';
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      background: url(../../../ui/form/phone.svg) no-repeat top/cover;
+      @include for-desktop-up {
+        margin-left: -2px;
+      }
+    }
+    .inputWrapperPhone {
+      position: relative;
+      height: 56px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+
+      @include for-phone {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-bottom: 39px;
+      }
+      @include for-tablet {
+        margin-bottom: 45px;
+      }
+      @include for-desktop {
+        margin-bottom: 45px;
+      }
+      @include for-desktop-up {
+        margin-bottom: 44px;
+        margin-left: -2px;
+      }
+      .contactFormInputPhone:focus {
+        border: 2px solid rgb(77, 171, 248);
+      }
+      .contactFormInputPhone {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        padding-right: 40px;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 1px solid rgba(144, 149, 153, 0.35);
+        padding: 15px 5px 17px 17px;
+        color: $secondary-text-color;
+        width: 67%;
+        outline: none;
+        @include for-phone {
+          width: 62%;
+        }
+      }
+      .contactFormInputCode:focus {
+        border: 2px solid rgb(77, 171, 248);
+      }
+      .contactFormInputCode {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 28%;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 1px solid rgba(144, 149, 153, 0.35);
+        padding: 15px 5px 17px 17px;
+        color: $secondary-text-color;
+        outline: none;
+      }
+    }
+    .btnWrapper {
+      width: 100%;
+      height: 56px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      @include for-phone {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      @include for-tablet {
+        margin-bottom: 22px;
+      }
+      @include for-desktop {
+        margin-bottom: 0px;
+      }
+      @include for-desktop-up {
+        margin-left: -2px;
+      }
+      .btn:hover {
+        background-image: -o-linear-gradient(
+          315deg,
+          rgb(252, 58, 65) 0%,
+          rgb(238, 38, 55) 100%
+        );
+        background-image: linear-gradient(
+          135deg,
+          rgb(252, 58, 65) 0%,
+          rgb(238, 38, 55) 100%
+        );
+      }
+      .btn {
+        border-radius: 8px;
+        border: none;
+        background-image: -o-linear-gradient(346deg, #ff474d, #fa4353);
+        background-image: linear-gradient(104deg, #ff474d, #fa4353);
+        text-align: right;
+        color: $btn-text-color;
+        font-size: 15px;
+        transition: 0.4s;
+        margin-bottom: 16px;
+        line-height: 1.33;
+        cursor: pointer;
+        width: 172px;
+        height: 52px;
+        outline: none;
         text-align: center;
         @include for-phone {
-          padding-bottom: 49px;
+          width: 252px;
+          margin: 0 auto 18px;
         }
-        @include for-tablet {
-          text-align-last: left;
-          padding-bottom: 49px;
-        }
-        @include for-desktop {
-          text-align-last: left;
-          padding-bottom: 49px;
-        }
-        @include for-desktop-up {
-          text-align-last: left;
-          padding-bottom: 50px;
-        }
-        .formTitle {
-          font-size: 18px;
-          font-weight: bold;
+      }
+      .btnWrapperText {
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 500;
+        color: #909599;
+        @include for-phone {
+          font-weight: 500;
           font-stretch: normal;
           font-style: normal;
-          line-height: 24px;
-          letter-spacing: normal;
-          color: $primary-text-color;
-          text-align: center;
-          letter-spacing: -0.3px;
-          @include for-phone {
-            margin-left: -7px;
-          }
-          @include for-desktop-up {
-            margin-bottom: -1px;
-          }
-        }
-      }
-      .inputWrapper {
-        display: flex;
-        width: 100%;
-        height: 56px;
-        align-items: center;
-        margin-bottom: 32px;
-        @include for-phone {
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        .contactFormInput:focus {
-          border: 2px solid rgb(77, 171, 248);
-        }
-        .contactFormInput {
-          font-size: 14px;
-          line-height: 1.36;
-          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 0.3px;
           width: 100%;
-          height: 100%;
-          border-radius: 10px;
-          border: 1px solid rgba(144, 149, 153, 0.35);
-          padding: 18px 19px 22px 16px;
-          color: $secondary-text-color;
-          outline: none;
+        }
+        @include for-tablet {
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.3px;
+          width: 44%;
+          margin-bottom: 14px;
+        }
+        @include for-desktop {
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.3px;
+          width: 44%;
+          margin-bottom: 14px;
         }
         @include for-desktop-up {
-          margin-left: -2px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.3px;
+          width: 44%;
+          margin-bottom: 14px;
         }
       }
     }
-  }
-}
-.inputWrapperPhone::after {
-  content: '';
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  right: 16px;
-  top: 16px;
-  background: url(../../../ui/form/phone.svg) no-repeat top/cover;
-  @include for-desktop-up {
-    margin-left: -2px;
-  }
-}
-.inputWrapperPhone {
-  position: relative;
-  width: 100%;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @include for-phone {
-    flex-wrap: wrap;
-    margin-bottom: 39px;
-  }
-  @include for-tablet {
-    margin-bottom: 45px;
-  }
-  @include for-desktop {
-    margin-bottom: 45px;
-  }
-  @include for-desktop-up {
-    margin-bottom: 44px;
-    margin-left: -2px;
-  }
-  .contactFormInputPhone:focus {
-    border: 2px solid rgb(77, 171, 248);
-  }
-  .contactFormInputPhone {
-    width: 231px;
-    position: relative;
-    padding-right: 40px;
-    font-size: 14px;
-    line-height: 1.36;
-    font-weight: 500;
-    height: 100%;
-    border-radius: 10px;
-    border: 1px solid rgba(144, 149, 153, 0.35);
-    padding: 18px 16px;
-    color: $secondary-text-color;
-    outline: none;
-    @include for-phone {
-      width: 62%;
-    }
-  }
-  .contactFormInputCode:focus {
-    border: 2px solid rgb(77, 171, 248);
-  }
-  .contactFormInputCode {
-    width: 96px;
-    font-size: 14px;
-    line-height: 1.36;
-    font-weight: 500;
-    height: 100%;
-    border-radius: 10px;
-    border: 1px solid rgba(144, 149, 153, 0.35);
-    padding: 18px 16px;
-    color: $secondary-text-color;
-    outline: none;
-    @include for-phone {
-      width: 32%;
-    }
-  }
-}
-.btnWrapper {
-  width: 100%;
-  height: 56px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-
-  @include for-phone {
-    flex-wrap: wrap;
-    justify-content: center;
-    height: auto;
-  }
-  @include for-desktop-up {
-    margin-left: -2px;
-  }
-}
-.btn:hover {
-  background-image: linear-gradient(
-    135deg,
-    rgb(252, 58, 65) 0%,
-    rgb(238, 38, 55) 100%
-  );
-}
-.btn {
-  border-radius: 8px;
-  border: none;
-  background-image: linear-gradient(104deg, #ff474d, #fa4353);
-  text-align: right;
-  color: $btn-text-color;
-  font-size: 15px;
-  transition: 0.4s;
-  margin-bottom: 16px;
-  line-height: 1.33;
-  cursor: pointer;
-  width: 172px;
-  height: 52px;
-  outline: none;
-  text-align: center;
-  @include for-phone {
-    width: 252px;
-    margin: 0 auto 18px;
-    padding: 0 2px 5px 16px;
-  }
-}
-.btnWrapperText {
-  text-align: center;
-  font-size: 12px;
-  line-height: 1.2;
-  font-weight: 500;
-  color: #909599;
-  // padding-right: 14px;
-  @include for-phone {
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.3px;
-    width: 100%;
-  }
-  @include for-tablet {
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.3px;
-    width: 44%;
-    margin-bottom: 14px;
-  }
-  @include for-desktop {
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.3px;
-    width: 44%;
-    margin-bottom: 14px;
-  }
-  @include for-desktop-up {
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.3px;
-    width: 44%;
-    margin-bottom: 14px;
   }
 }

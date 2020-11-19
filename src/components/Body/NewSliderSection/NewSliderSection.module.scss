@@ -28,22 +28,38 @@
   }
   .content {
     max-width: 1128px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
     height: auto;
     margin: 0;
     @include for-phone {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
     }
     @include for-tablet {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
     }
     @include for-desktop {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
     }
     @include for-desktop-up {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       max-width: 1128px;
     }
@@ -84,6 +100,7 @@
       z-index: 1;
       display: flex;
       align-items: center;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -109,6 +126,7 @@
             top: 142px;
             left: 15px;
             height: 328px;
+            -o-object-fit: contain;
             object-fit: contain;
           }
           @include for-tablet {
@@ -116,18 +134,21 @@
             top: 40px;
             left: -15px;
             width: 1064px;
+            -o-object-fit: contain;
             object-fit: contain;
           }
           @include for-desktop {
             margin-top: 50px;
             margin-left: -15px;
             width: 1055px;
+            -o-object-fit: contain;
             object-fit: contain;
           }
           @include for-desktop-up {
             margin-top: 50px;
             margin-left: -15px;
             width: 1055px;
+            -o-object-fit: contain;
             object-fit: contain;
           }
         }
@@ -138,6 +159,7 @@
             top: 133px;
             left: 50px;
             height: 326px;
+            -o-object-fit: contain;
             object-fit: contain;
           }
           @include for-tablet {
@@ -146,6 +168,7 @@
             top: 40px;
             left: 55px;
             width: 900px;
+            -o-object-fit: contain;
             object-fit: contain;
           }
           @include for-desktop {
@@ -153,6 +176,7 @@
             margin-top: 10px;
             margin-left: 45px;
             width: 900px;
+            -o-object-fit: contain;
             object-fit: contain;
           }
           @include for-desktop-up {
@@ -160,6 +184,7 @@
             margin-top: 10px;
             margin-left: 45px;
             width: 900px;
+            -o-object-fit: contain;
             object-fit: contain;
           }
         }
@@ -168,9 +193,17 @@
   }
   .btnWrapper {
     z-index: 22;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     @include for-phone {
       margin-top: -15px;
@@ -180,16 +213,19 @@
     @include for-tablet {
       margin: 8px 0 0 4px;
       position: static;
+      -ms-flex-item-align: start;
       align-self: flex-start;
       min-width: 186px;
     }
     @include for-desktop {
       margin-left: 9px;
+      -ms-flex-item-align: start;
       align-self: flex-start;
       min-width: 186px;
     }
     @include for-desktop-up {
       margin-left: 9px;
+      -ms-flex-item-align: start;
       align-self: flex-start;
       min-width: 186px;
     }
@@ -205,22 +241,31 @@
   }
   @include for-desktop {
     padding: 0;
-    align-self: start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
     margin: 25px 0 60px 7px;
   }
   @include for-desktop-up {
     padding: 0;
-    align-self: start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
     margin: 25px 0 60px 7px;
   }
   .slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100%;
     width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     overflow: hidden;
     .slide {
@@ -240,9 +285,9 @@
           font-weight: bold;
           font-stretch: normal;
           font-style: normal;
-          line-height: normal;
+
           line-height: 1.4;
-          letter-spacing: normal;
+
           letter-spacing: -0.4px;
           text-align: center;
           margin-bottom: 16px;
@@ -272,7 +317,6 @@
           font-size: 32px;
           width: 288px;
           line-height: 1.4;
-          letter-spacing: -0.3px;
           letter-spacing: normal;
           font-stretch: normal;
         }
@@ -286,7 +330,7 @@
         color: $secondary-text-color;
         @include for-phone {
           line-height: 1.7;
-          // width: 280px;
+
           letter-spacing: 0.2px;
         }
         @include for-tablet {
@@ -327,6 +371,8 @@
   cursor: pointer;
 }
 .paginationList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .paginationList li:not(:last-of-type) {
@@ -371,22 +417,40 @@
 }
 
 .descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   @include for-tablet {
     padding: 0 30px 0 50px;
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   @include for-desktop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     padding: 116px 0 0 70px;
   }
   @include for-desktop-up {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     padding: 115px 0 0 0px;
   }

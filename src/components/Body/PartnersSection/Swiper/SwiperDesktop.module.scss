@@ -1,6 +1,10 @@
 @import 'mixin.scss';
 .imgWrpItalian {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   @include for-tablet {
@@ -77,6 +81,7 @@
 }
 .imgWrpSimply {
   position: relative;
+  -o-object-fit: contain;
   object-fit: contain;
   @include for-tablet {
     margin: -16px 0 0 20px;
@@ -96,6 +101,7 @@
 }
 .imgItalian {
   position: relative;
+  -o-object-fit: contain;
   object-fit: contain;
   @include for-tablet {
     margin: -8px 0 0 5px;

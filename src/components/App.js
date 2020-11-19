@@ -29,8 +29,8 @@ const App = () => {
           <StepSection />
           <FormSection />
         </main>
+        <Footer />
       </div>
-      <Footer />
     </BrowserRouter>
   );
 };

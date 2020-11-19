@@ -4,14 +4,15 @@
   position: relative;
 }
 .dotsBg {
-  width: 100%;
-  height: 100%;
+  margin: 0 auto;
   position: absolute;
   z-index: 2;
   pointer-events: none;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: 0;
   @include for-phone {
     display: none;

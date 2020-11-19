@@ -34,41 +34,64 @@
     }
 
     .content {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       height: 415px;
       position: relative;
       z-index: 2;
       @include for-phone {
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
         align-items: baseline;
         height: auto;
       }
       @include for-tablet {
         height: auto;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
       }
       .contentImg {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         position: relative;
         width: 624px;
         margin-right: 98px;
         @include for-phone {
+          -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
           order: 2;
-
           max-width: 95vw;
           max-height: 40vh;
+          -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
           align-self: center;
           margin: 0;
           margin-bottom: 55px;
         }
         @include for-tablet {
+          -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
           order: 2;
           width: 469px;
           top: 26px;
           margin-right: 34px;
+          -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
           align-self: center;
           margin: 0;
           margin-bottom: 95px;
@@ -99,6 +122,8 @@
           }
         }
         .animationWrapper {
+          -webkit-transition: 0.4s;
+          -o-transition: 0.4s;
           transition: 0.4s;
           width: 100%;
           @include for-phone {
@@ -108,7 +133,6 @@
           }
           @include for-desktop {
             max-width: 510px;
-            // margin-top: -35px;
             margin-left: 30px;
           }
           @include for-desktop-up {
@@ -155,16 +179,24 @@
         }
         .line {
           @include for-phone {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
           }
           .contentButtons {
             @include for-phone {
               margin-bottom: 70px;
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
+              -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
               justify-content: space-between;
-
               width: 280px;
             }
             @include for-tablet {
@@ -189,6 +221,8 @@
               background-color: transparent;
               border-radius: 6px;
               border: solid 1px rgba(144, 149, 153, 0.35);
+              -webkit-transition: 0.4s;
+              -o-transition: 0.4s;
               transition: 0.4s;
               cursor: pointer;
             }
@@ -206,13 +240,14 @@
               border: solid 1px rgba(144, 149, 153, 0.35);
               box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.11);
               background-color: #fff;
+              -webkit-transition: 0.4s;
+              -o-transition: 0.4s;
               transition: 0.4s;
               cursor: pointer;
             }
             button:first-of-type {
               @include for-phone {
                 margin: 0;
-                // justify-content: space-between;
               }
               margin-right: 24px;
             }
@@ -249,11 +284,15 @@
         width: 36%;
         @include for-phone {
           width: 100%;
+          -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
           order: 3;
           text-align: center;
         }
         @include for-tablet {
           width: 100%;
+          -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
           order: 3;
           text-align: center;
         }

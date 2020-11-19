@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 
-import './normalize.scss';
+// import './normalize.scss';
 import './scss/fonts.scss';
 import './index.scss';
 

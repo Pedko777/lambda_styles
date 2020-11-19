@@ -1,5 +1,4 @@
 @import 'variables.scss';
-@import 'fonts.scss';
 @import 'mixin.scss';
 
 .header {
@@ -16,7 +15,7 @@
     background: #fff;
   }
   .headerWrp {
-    padding: 0 76px 0 64px;
+    padding-right: 11px;
     @include for-phone {
       padding: 0 24px;
     }
@@ -31,6 +30,8 @@
 }
 
 .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   padding: 18px 0 14px;
@@ -39,16 +40,21 @@
   font-weight: 600;
 
   @include for-phone {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-  @include for-desktop-up {
-    // margin-right: 12px;
   }
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   @include for-tablet {
     width: 100%;
@@ -75,8 +81,14 @@
     margin-right: 12px;
   }
   .logoLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
   }
@@ -106,6 +118,8 @@
   position: absolute;
   top: 3px;
   left: 9px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .btnModal::after {
@@ -117,11 +131,13 @@
   position: absolute;
   top: 3px;
   left: 9px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 .btnModal {
   position: fixed;
-  // top: -50px;
+
   right: 24px;
   height: 24px;
   width: 24px;

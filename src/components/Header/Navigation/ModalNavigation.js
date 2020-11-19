@@ -20,10 +20,9 @@ const ModalNavigation = ({ closeModal }) => {
   useEffect(() => {
     window.addEventListener('keydown', handleKeydown);
     modalRef.current.addEventListener('click', handleClickModal);
-    return () => {
-      window.removeEventListener('keydown', handleKeydown);
-      modalRef.current.removeEventListener('click', handleClickModal);
-    };
+
+    window.removeEventListener('keydown', handleKeydown);
+    modalRef.current.removeEventListener('click', handleClickModal);
   }, [handleClickModal, handleKeydown, modalRef]);
   return (
     <div ref={modalRef} className={styles.overlay}>

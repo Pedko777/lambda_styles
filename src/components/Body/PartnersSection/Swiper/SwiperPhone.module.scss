@@ -1,6 +1,10 @@
 @import 'mixin.scss';
 .imgWrpItalian {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   @include for-phone {
@@ -38,6 +42,7 @@
 }
 .imgWrpSimply {
   position: relative;
+  -o-object-fit: contain;
   object-fit: contain;
   @include for-phone {
     margin: -18px 0 0 5px;
@@ -47,6 +52,7 @@
 }
 .imgItalian {
   position: relative;
+  -o-object-fit: contain;
   object-fit: contain;
   @include for-phone {
     margin: -8px 0 0 5px;

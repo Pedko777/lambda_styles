@@ -27,3 +27,15 @@
     @content;
   }
 }
+
+@mixin bg-desktop {
+  @media (min-width: 1279px) and (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin bg-desktop-up {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
