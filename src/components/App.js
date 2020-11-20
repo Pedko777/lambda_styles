@@ -17,9 +17,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className={styles.root}>
-        <div className={styles.dotsBg}></div>
         <Header />
         <main className={styles.main}>
+          <div className={styles.dotsBg}></div>
           <FirstSection />
           <DemoSection />
           <PartnersSection />

@@ -3,38 +3,38 @@
 .root {
   position: relative;
 }
+
 .dotsBg {
-  margin: 0 auto;
+  overflow-x: hidden;
+  overflow: hidden;
+
+  margin: 0px auto;
   position: absolute;
-  z-index: 2;
-  pointer-events: none;
-  top: 0;
+  top: -1200px;
+  bottom: 0px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  bottom: 0;
+  background-image: url(../ui/rootBg/1.png), url(../ui/rootBg/2.png),
+    url(../ui/rootBg/3.png), url(../ui/rootBg/4.png);
+  background-repeat: no-repeat;
+  z-index: 1;
   @include for-phone {
     display: none;
   }
-
   @include for-tablet {
-    background: url(../ui/rootBg/1.png) no-repeat right -420px top 5px/600px,
-      url(../ui/rootBg/2.png) no-repeat right -409px top 769px/960px,
-      url(../ui/rootBg/3.png) no-repeat left 51px bottom 3585px/695px,
-      url(../ui/rootBg/4.png) no-repeat left 274px bottom 566px/570px;
+    width: 768px;
+    background-position: 585px 1210px, 125px 2100px, 50px 4410px, 200px 8085px;
+    background-size: 600px 800px, 960px 1400px, 850px 1530px, 500px 1200px;
   }
   @include for-desktop {
-    background: url(../ui/rootBg/1.png) no-repeat right -162px top 5px/600px,
-      url(../ui/rootBg/2.png) no-repeat right -164px top 1113px/960px,
-      url(../ui/rootBg/3.png) no-repeat left 265px bottom 950px/695px,
-      url(../ui/rootBg/4.png) no-repeat left 324px bottom 28px/410px;
+    width: 1024px;
+    background-position: 570px 1210px, 255px 2305px, 450px 4050px, 400px 5400px;
+    background-size: 650px 850px, 960px 1485px, 750px 1330px, 400px 1050px;
   }
   @include for-desktop-up {
-    background: url(../ui/rootBg/1.png) no-repeat right 85px top 5px/600px,
-      url(../ui/rootBg/2.png) no-repeat right 95px top 805px/990px,
-      url(../ui/rootBg/3.png) no-repeat left 319px bottom 1050px/710px,
-      url(../ui/rootBg/4.png) no-repeat left 283px bottom 28px/410px;
+    width: 1280px;
+    background-position: 570px 1210px, 215px 2125px, 450px 4050px, 400px 5400px;
+    background-size: 700px 900px, 1050px 1550px, 750px 1330px, 400px 1050px;
   }
 }
 
