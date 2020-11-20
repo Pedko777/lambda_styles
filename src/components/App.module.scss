@@ -7,12 +7,13 @@
 .dotsBg {
   overflow-x: hidden;
   overflow: hidden;
-
   margin: 0px auto;
   position: absolute;
   top: -1200px;
   bottom: 0px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   background-image: url(../ui/rootBg/1.png), url(../ui/rootBg/2.png),
     url(../ui/rootBg/3.png), url(../ui/rootBg/4.png);
