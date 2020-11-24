@@ -353,7 +353,6 @@
           text-align: left;
           width: 380px;
           line-height: 1.65;
-
           margin-bottom: 20px;
         }
       }
@@ -378,7 +377,7 @@
   margin-right: 12px;
 }
 .paginationList li {
-  margin-bottom: 3px;
+  padding-bottom: 8px;
 }
 .paginationBtnActive {
   border-radius: 50%;
@@ -406,7 +405,7 @@
   height: 48px;
   border-radius: 50%;
   border: solid 1px #f0f1f2;
-  background-color: transparent;
+  background-color: #fff;
   transition: all 0.5s;
   cursor: pointer;
   .img {
